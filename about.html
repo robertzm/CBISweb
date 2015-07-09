@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Center for Biomedical Imaging Statistics (CBIS)</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<link href="css/docs.css" rel="stylesheet">
+    <script>
+            $(window).scroll(function(){
+                var ref_min = $("#myScrollspy")[0];
+                if(!ref_min)
+                    return;
+                if($(window).scrollTop() > ($(".col-sm-3")[0].offsetTop) -60){
+                    $("#myScrollspy").addClass("isfixed");
+                }else{
+                    $("#myScrollspy").removeClass("isfixed");
+                }
+            });
+    </script>
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="500">
+<!-- TopNavbar -->
+<nav id="navigater" class="container navbar-inverse navbar-fixed-top">
+	<div class="brand">
+		<a class="navbar-brand" href="#">CBIS</a>
+	</div>
+	<div>
+		<ul class="nav navbar-nav">
+			<li><a href="index.html">Home</a></li>
+			<li class="active"><a href="#">About us</a></li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">People <span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="#">Core Faculty</a></li>
+					<li><a href="#">Members</a></li>
+					<li><a href="#">Collaborators</a></li>
+				</ul>
+			</li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Research <span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="#">Proj 1 </a></li>
+					<li><a href="#">Proj 2 </a></li>
+					<li><a href="#">Proj 3 </a></li>
+				</ul>
+			</li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Publications <span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="#">Methodology </a></li>
+					<li><a href="#">Applications </a></li>
+					<li><a href="#">Presentation </a></li>
+				</ul>
+			</li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Grants <span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="#">Column 1 </a></li>
+					<li><a href="#">Column 2 </a></li>
+					<li><a href="#">Column 3 </a></li>
+				</ul>
+			</li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Softwares <span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="#">sub 1 </a></li>
+					<li><a href="#">sub 2 </a></li>
+					<li><a href="#">sub 3 </a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</nav>
+<!-- Header -->
+<div class="header">
+	<div class="text-bg">
+		<div class="container">
+		<div class="cbis">
+				<h1>About Us</h1>
+				<hr>
+				<p>This is our simple introduction, if you have any better text, please tell me to replace it.</p>
+				<button type="button" class="btn btn-danger">Learn More</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Content -->
+<div class="container">
+	<div class="row">
+            <div class="col-sm-3" >
+                <nav id="myScrollspy">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="#section1">section 1</a><li>
+                        <li><a href="#section2">section 2</a><li>
+                        <li><a href="#section3">section 3</a><li>
+                        <li><a href="#section4">section 4</a><li>
+                    </ul>
+                </nav>
+            </div>	
+		<div class="col-sm-9">
+            <div id="section1">
+                <h1>Section 1</h1>
+                <p>Test scroll spy work!</p>
+            </div>
+            <div id="section2">
+                <h1>Section 2</h1>
+                <p>Test scroll spy work!</p>
+            </div>
+            <div id="section3">
+                <h1>Section 3</h1>
+                <p>Test scroll spy work!</p>
+            </div>
+            <div id="section4">
+                <h1>Section 4</h1>
+                <p>Test scroll spy work!</p>
+            </div>
+		</div>
+	</div>
+</div>
+
+
+
+</body>
+</html>

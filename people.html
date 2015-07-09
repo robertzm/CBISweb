@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Center for Biomedical Imaging Statistics (CBIS)</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<link href="css/global.css" rel="stylesheet">
+	<link href="css/people.css" rel="stylesheet">
+	<script>
+            $(window).scroll(function(){
+                var ref_min = $("#myScrollspy")[0];
+                if(!ref_min)
+                    return;
+                if($(window).scrollTop() > $("#Core-Faculty").offset().top - 80){
+                    $("#myScrollspy").addClass("isfixed");
+                }else{
+                    $("#myScrollspy").removeClass("isfixed");
+                }
+                
+            });
+    </script>
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="500">
+<!-- TopNavbar -->
+<nav id="navigater" class="navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="brand">
+			<a class="navbar-brand" href="#">CBIS</a>
+		</div>
+		<div>
+			<ul class="nav navbar-nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li class="active"><a href="#">People</a></li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Research <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Proj 1 </a></li>
+						<li><a href="#">Proj 2 </a></li>
+						<li><a href="#">Proj 3 </a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Publications <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Methodology </a></li>
+						<li><a href="#">Applications </a></li>
+						<li><a href="#">Presentation </a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Grants <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Column 1 </a></li>
+						<li><a href="#">Column 2 </a></li>
+						<li><a href="#">Column 3 </a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Softwares <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">sub 1 </a></li>
+						<li><a href="#">sub 2 </a></li>
+						<li><a href="#">sub 3 </a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<!-- Header -->
+<div class="jumbotron">
+	<div class="header">
+	<div class="container">
+		<img src="images/CBIS.png" />	
+		<h1>People</h1>
+		<hr>
+		<p>This is our simple introduction, if you have any better text, please tell me to replace it.</p>	
+	</div>
+	</div>
+</div>
+<div class="container bs-docs-container">
+	<div class="row">
+		<div class="col-md-9" role="main">
+			<div id="Core-Faculty" class="bs-docs-section">
+				<h1 class="page-header">
+				Core Faculty
+				</h1>
+				<table class="table table-striped">
+					<tbody>
+						<div class="container">
+							<tr>
+								<td class="col-md-3">
+									<img src="images/people/YingGuo.png" />
+								</td>
+								<td char="col-md-9">
+									<h4>Ying Guo</h4>
+									<h5>Associate Professor</h5>
+									<ul>
+										<li><p>Expertise: Imaging Statistics, Independent Component Analysis, Agreement and Reliability Methods <p></li>
+										<li><p>Email: <a href="mailto:yguo2@emory.edu">yguo2@emory.edu</a></p></li>
+										<li><p>Personal Website: <a href="http://web1.sph.emory.edu/users/yguo2">web1.sph.emory.edu/users/yguo2</a></p></li>
+										<li><a href="https://scholar.google.com/scholar?q=ying+guo+emory&btnG=&hl=en&as_sdt=0%2C11" target="_blank"><img src="images/scholar_logo_lg_2011.gif" style="height: 35px"></a></li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td class="col-md-3">
+									<img src="images/people/Kundu.png" />
+								</td>
+								<td char="col-md-9">
+									<h4>Suprateek Kundu</h4>
+									<h5>Assistant Professor</h5>
+									<ul>
+										<li><p>Expertise: ...</p></li>
+										<li><p>Email: suprateek.kundu@emory.edu</p></li>
+										<li><p>Personal Website: </p></li>
+										<li><a href="https://scholar.google.com/scholar?q=Suprateek+Kundu&btnG=&hl=en&as_sdt=0%2C11" target="_blank"><img src="images/scholar_logo_lg_2011.gif" style="height: 35px"></a></li>
+									</ul>
+								</td>
+							</tr>
+						</div>
+					</tbody>
+				</table>
+			</div>	
+			<div id="Affiliated-Faculty" class="bs-docs-section">
+				<h1 class="page-header">
+				Affiliated Faculty
+				</h1>
+				<table class="table table-striped">
+					<tbody>
+						<div class="container">
+							<tr>
+								<td class="col-md-3">
+									<img src="images/people/DuBoisBowman.png" />
+								</td>
+								<td char="col-md-9">
+									<h4>F. DuBois Bowman</h4>
+									<h5>Professor</h5>
+									<ul>
+										<li><p>Expertise: ...</p></li>
+										<li><p>Email: <a href="mailto:dubois.bowman@columbia.edu">dubois.bowman@columbia.edu</a></p></li>
+										<li><p>Personal Website: <a href="#"></a></p></li>
+										<li><a href="#" target="_blank"><img src="images/scholar_logo_lg_2011.gif" style="height: 35px"></a></li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td class="col-md-3">
+									<img src="images/people/JianKang.png" />
+								</td>
+								<td char="col-md-9">
+									<h4>Jian Kang</h4>
+									<h5>Assistant Professor</h5>
+									<ul>
+										<li><p>Expertise: ...</p></li>
+										<li><p>Email: jian.kang@emory.edu</p></li>
+										<li><p>Personal Website: </p></li>
+										<li><a href="" target="_blank"><img src="images/scholar_logo_lg_2011.gif" style="height: 35px"></a></li>
+									</ul>
+								</td>
+							</tr>
+						</div>
+					</tbody>
+				</table>
+			</div>
+			<div id="Members" class="bs-docs-section">
+				<h1 class="page-header">
+				Members
+				</h1>
+				<table class="table table-striped">
+					<tbody>
+						<div class="container">
+							<tr>
+								<td class="col-md-3">
+									<img src="images/people/phebe.png" />
+								</td>
+								<td char="col-md-9">
+									<h4>Phebe Kemmer</h4>
+									<h5>Ph. D Student</h5>
+									<ul>
+										<li><p>Expertise: ...</p></li>
+										<li><p>Email: <a href="mailto:pbrenne@emory.edu">pbrenne@emory.edu</a></p></li>
+										<li><p>Personal Website: <a href="#"></a></p></li>
+										<li><a href="" target="_blank"><img src="images/scholar_logo_lg_2011.gif" style="height: 35px"></a></li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td class="col-md-3">
+									<img src="images/people/Dai.png" />
+								</td>
+								<td char="col-md-9">
+									<h4>Tian Dai</h4>
+									<h5>Ph. D Student</h5>
+									<ul>
+										<li><p>Expertise: ...</p></li>
+										<li><p>Email: <a href="mailto:tdai2@emory.edu">tdai2@emory.edu</a></p></li>
+										<li><p>Personal Website: </p></li>
+										<li><a href="https://" target="_blank"><img src="images/scholar_logo_lg_2011.gif" style="height: 35px"></a></li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td class="col-md-3">
+									<img src="images/people/ShiRan.png" />
+								</td>
+								<td char="col-md-9">
+									<h4>Ran Shi</h4>
+									<h5>Ph. D Student</h5>
+									<ul>
+										<li><p>Expertise: ...</p></li>
+										<li><p>Email: <a href="mailto:ran.shi@emory.edu">ran.shi@emory.edu</a></p></li>
+										<li><p>Personal Website: web1.sph.emory.edu/users/yguo2</p></li>
+										<li><a href="https://" target="_blank"><img src="images/scholar_logo_lg_2011.gif" style="height: 35px"></a></li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td class="col-md-3">
+									<img src="images/people/ShiRan.png" />
+								</td>
+								<td char="col-md-9">
+									<h4>Zae Higgins</h4>
+									<h5>Ph. D Student</h5>
+									<ul>
+										<li><p>Expertise: ...</p></li>
+										<li><p>Email: <a href="mailto:ran.shi@emory.edu">ran.shi@emory.edu</a></p></li>
+										<li><p>Personal Website: web1.sph.emory.edu/users/yguo2</p></li>
+										<li><a href="https://" target="_blank"><img src="images/scholar_logo_lg_2011.gif" style="height: 35px"></a></li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td class="col-md-3">
+									<img src="images/people/QingpoCai.png" />
+								</td>
+								<td char="col-md-9">
+									<h4>Qingpo Cai</h4>
+									<h5>Ph. D Student</h5>
+									<ul>
+										<li><p>Expertise: ...</p></li>
+										<li><p>Email: <a href="mailto:qingpo.cai@emory.edu">qingpo.cai@emory.edu</a></p></li>
+										<li><p>Personal Website: </p></li>
+										<li><a href="https://www.linkedin.com/home?trk=nav_responsive_tab_home" target="_blank"><img src="images/logo_linkedin.png" style="height: 25px"></a></li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td class="col-md-3">
+									<img src="images/people/QingpoCai.png" />
+								</td>
+								<td char="col-md-9">
+									<h4>Yikai Wang</h4>
+									<h5>Ph. D Student</h5>
+									<ul>
+										<li><p>Expertise: ...</p></li>
+										<li><p>Email: <a href="mailto:yikai.wang@emory.edu">yikai.wang@emory.edu</a></p></li>
+										<li><p>Personal Website: </p></li>
+										<li><a href="https://" target="_blank"><img src="images/logo_linkedin.png" style="height: 25px"></a></li>
+									</ul>
+								</td>
+							</tr>							
+							<tr>
+								<td class="col-md-3">
+									<img src="images/people/QingpoCai.png" />
+								</td>
+								<td char="col-md-9">
+									<h4>Caprichia Jeffers</h4>
+									<h5>Ph. D Student</h5>
+									<ul>
+										<li><p>Expertise: ...</p></li>
+										<li><p>Email: <a href="mailto:yikai.wang@emory.edu">yikai.wang@emory.edu</a></p></li>
+										<li><p>Personal Website: </p></li>
+										<li><a href="https://" target="_blank"><img src="images/logo_linkedin.png" style="height: 25px"></a></li>
+									</ul>
+								</td>
+							</tr>							
+							<tr>
+								<td class="col-md-3">
+									<img src="images/people/QingpoCai.png" />
+								</td>
+								<td char="col-md-9">
+									<h4>Behzad Kianian</h4>
+									<h5>Ph. D Student</h5>
+									<ul>
+										<li><p>Expertise: ...</p></li>
+										<li><p>Email: <a href="mailto:yikai.wang@emory.edu">yikai.wang@emory.edu</a></p></li>
+										<li><p>Personal Website: </p></li>
+										<li><a href="https://" target="_blank"><img src="images/logo_linkedin.png" style="height: 25px"></a></li>
+									</ul>
+								</td>
+							</tr>							
+							<tr>
+								<td class="col-md-3">
+									<img src="images/people/QingpoCai.png" />
+								</td>
+								<td char="col-md-9">
+									<h4>Fazlur Rahman</h4>
+									<h5>Post Doc</h5>
+									<ul>
+										<li><p>Expertise: ...</p></li>
+										<li><p>Email: <a href="mailto:yikai.wang@emory.edu">yikai.wang@emory.edu</a></p></li>
+										<li><p>Personal Website: </p></li>
+										<li><a href="https://" target="_blank"><img src="images/logo_linkedin.png" style="height: 25px"></a></li>
+									</ul>
+								</td>
+							</tr>							
+							<tr>
+								<td class="col-md-3">
+									<img src="images/people/QingpoCai.png" />
+								</td>
+								<td char="col-md-9">
+									<h4>Tianyu Ding</h4>
+									<h5>Master Student</h5>
+									<ul>
+										<li><p>Expertise: ...</p></li>
+										<li><p>Email: <a href="mailto:yikai.wang@emory.edu">yikai.wang@emory.edu</a></p></li>
+										<li><p>Personal Website: </p></li>
+										<li><a href="https://" target="_blank"><img src="images/logo_linkedin.png" style="height: 25px"></a></li>
+									</ul>
+								</td>
+							</tr>							
+							<tr>
+								<td class="col-md-3">
+									<img src="images/people/QingpoCai.png" />
+								</td>
+								<td char="col-md-9">
+									<h4>Junhan Fang</h4>
+									<h5>Master Student</h5>
+									<ul>
+										<li><p>Expertise: ...</p></li>
+										<li><p>Email: <a href="mailto:yikai.wang@emory.edu">yikai.wang@emory.edu</a></p></li>
+										<li><p>Personal Website: </p></li>
+										<li><a href="https://" target="_blank"><img src="images/logo_linkedin.png" style="height: 25px"></a></li>
+									</ul>
+								</td>
+							</tr>							
+							<tr>
+								<td class="col-md-3">
+									<img src="images/people/QingpoCai.png" />
+								</td>
+								<td char="col-md-9">
+									<h4>Jin Ming</h4>
+									<h5>Master Student</h5>
+									<ul>
+										<li><p>Expertise: ...</p></li>
+										<li><p>Email: <a href="mailto:yikai.wang@emory.edu">yikai.wang@emory.edu</a></p></li>
+										<li><p>Personal Website: </p></li>
+										<li><a href="https://" target="_blank"><img src="images/logo_linkedin.png" style="height: 25px"></a></li>
+									</ul>
+								</td>
+							</tr>
+						</div>
+					</tbody>
+				</table>
+			</div>
+			<div id="Alumni" class="bs-docs-section">
+				<h1 class="page-header">
+				Alumni	
+				</h1>
+				<table class="table table-striped">
+					<tbody>
+						<div class="container">
+							<tr>
+								<td class="col-md-3">
+									<img src="images/people/phebe.png" />
+								</td>
+								<td char="col-md-9">
+									<h4>Phebe Kemmer</h4>
+									<h5>Ph. D Student</h5>
+									<ul>
+										<li><p>Expertise: ...</p></li>
+										<li><p>Email: <a href="mailto:pbrenne@emory.edu">pbrenne@emory.edu</a></p></li>
+										<li><p>Personal Website: <a href="#"></a></p></li>
+										<li><a href="" target="_blank"><img src="images/scholar_logo_lg_2011.gif" style="height: 35px"></a></li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td class="col-md-3">
+									<img src="images/people/Dai.png" />
+								</td>
+								<td char="col-md-9">
+									<h4>Tian Dai</h4>
+									<h5>Ph. D Student</h5>
+									<ul>
+										<li><p>Expertise: ...</p></li>
+										<li><p>Email: <a href="mailto:tdai2@emory.edu">tdai2@emory.edu</a></p></li>
+										<li><p>Personal Website: </p></li>
+										<li><a href="https://" target="_blank"><img src="images/scholar_logo_lg_2011.gif" style="height: 35px"></a></li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td class="col-md-3">
+									<img src="images/people/ShiRan.png" />
+								</td>
+								<td char="col-md-9">
+									<h4>Ran Shi</h4>
+									<h5>Ph. D Student</h5>
+									<ul>
+										<li><p>Expertise: ...</p></li>
+										<li><p>Email: <a href="mailto:ran.shi@emory.edu">ran.shi@emory.edu</a></p></li>
+										<li><p>Personal Website: web1.sph.emory.edu/users/yguo2</p></li>
+										<li><a href="https://" target="_blank"><img src="images/scholar_logo_lg_2011.gif" style="height: 35px"></a></li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td class="col-md-3">
+									<img src="images/people/ShiRan.png" />
+								</td>
+								<td char="col-md-9">
+									<h4>Zae Higgins</h4>
+									<h5>Ph. D Student</h5>
+									<ul>
+										<li><p>Expertise: ...</p></li>
+										<li><p>Email: <a href="mailto:ran.shi@emory.edu">ran.shi@emory.edu</a></p></li>
+										<li><p>Personal Website: web1.sph.emory.edu/users/yguo2</p></li>
+										<li><a href="https://" target="_blank"><img src="images/scholar_logo_lg_2011.gif" style="height: 35px"></a></li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td class="col-md-3">
+									<img src="images/people/QingpoCai.png" />
+								</td>
+								<td char="col-md-9">
+									<h4>Qingpo Cai</h4>
+									<h5>Ph. D Student</h5>
+									<ul>
+										<li><p>Expertise: ...</p></li>
+										<li><p>Email: <a href="mailto:qingpo.cai@emory.edu">qingpo.cai@emory.edu</a></p></li>
+										<li><p>Personal Website: </p></li>
+										<li><a href="https://www.linkedin.com/home?trk=nav_responsive_tab_home" target="_blank"><img src="images/logo_linkedin.png" style="height: 25px"></a></li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td class="col-md-3">
+									<img src="images/people/QingpoCai.png" />
+								</td>
+								<td char="col-md-9">
+									<h4>Yikai Wang</h4>
+									<h5>Ph. D Student</h5>
+									<ul>
+										<li><p>Expertise: ...</p></li>
+										<li><p>Email: <a href="mailto:yikai.wang@emory.edu">yikai.wang@emory.edu</a></p></li>
+										<li><p>Personal Website: </p></li>
+										<li><a href="https://" target="_blank"><img src="images/logo_linkedin.png" style="height: 25px"></a></li>
+									</ul>
+								</td>
+							</tr>							
+							<tr>
+								<td class="col-md-3">
+									<img src="images/people/QingpoCai.png" />
+								</td>
+								<td char="col-md-9">
+									<h4>Caprichia Jeffers</h4>
+									<h5>Ph. D Student</h5>
+									<ul>
+										<li><p>Expertise: ...</p></li>
+										<li><p>Email: <a href="mailto:yikai.wang@emory.edu">yikai.wang@emory.edu</a></p></li>
+										<li><p>Personal Website: </p></li>
+										<li><a href="https://" target="_blank"><img src="images/logo_linkedin.png" style="height: 25px"></a></li>
+									</ul>
+								</td>
+							</tr>							
+							<tr>
+								<td class="col-md-3">
+									<img src="images/people/QingpoCai.png" />
+								</td>
+								<td char="col-md-9">
+									<h4>Behzad Kianian</h4>
+									<h5>Ph. D Student</h5>
+									<ul>
+										<li><p>Expertise: ...</p></li>
+										<li><p>Email: <a href="mailto:yikai.wang@emory.edu">yikai.wang@emory.edu</a></p></li>
+										<li><p>Personal Website: </p></li>
+										<li><a href="https://" target="_blank"><img src="images/logo_linkedin.png" style="height: 25px"></a></li>
+									</ul>
+								</td>
+							</tr>							
+							<tr>
+								<td class="col-md-3">
+									<img src="images/people/QingpoCai.png" />
+								</td>
+								<td char="col-md-9">
+									<h4>Fazlur Rahman</h4>
+									<h5>Post Doc</h5>
+									<ul>
+										<li><p>Expertise: ...</p></li>
+										<li><p>Email: <a href="mailto:yikai.wang@emory.edu">yikai.wang@emory.edu</a></p></li>
+										<li><p>Personal Website: </p></li>
+										<li><a href="https://" target="_blank"><img src="images/logo_linkedin.png" style="height: 25px"></a></li>
+									</ul>
+								</td>
+							</tr>							
+							<tr>
+								<td class="col-md-3">
+									<img src="images/people/QingpoCai.png" />
+								</td>
+								<td char="col-md-9">
+									<h4>Tianyu Ding</h4>
+									<h5>Master Student</h5>
+									<ul>
+										<li><p>Expertise: ...</p></li>
+										<li><p>Email: <a href="mailto:yikai.wang@emory.edu">yikai.wang@emory.edu</a></p></li>
+										<li><p>Personal Website: </p></li>
+										<li><a href="https://" target="_blank"><img src="images/logo_linkedin.png" style="height: 25px"></a></li>
+									</ul>
+								</td>
+							</tr>							
+							<tr>
+								<td class="col-md-3">
+									<img src="images/people/QingpoCai.png" />
+								</td>
+								<td char="col-md-9">
+									<h4>Junhan Fang</h4>
+									<h5>Master Student</h5>
+									<ul>
+										<li><p>Expertise: ...</p></li>
+										<li><p>Email: <a href="mailto:yikai.wang@emory.edu">yikai.wang@emory.edu</a></p></li>
+										<li><p>Personal Website: </p></li>
+										<li><a href="https://" target="_blank"><img src="images/logo_linkedin.png" style="height: 25px"></a></li>
+									</ul>
+								</td>
+							</tr>							
+							<tr>
+								<td class="col-md-3">
+									<img src="images/people/QingpoCai.png" />
+								</td>
+								<td char="col-md-9">
+									<h4>Jin Ming</h4>
+									<h5>Master Student</h5>
+									<ul>
+										<li><p>Expertise: ...</p></li>
+										<li><p>Email: <a href="mailto:yikai.wang@emory.edu">yikai.wang@emory.edu</a></p></li>
+										<li><p>Personal Website: </p></li>
+										<li><a href="https://" target="_blank"><img src="images/logo_linkedin.png" style="height: 25px"></a></li>
+									</ul>
+								</td>
+							</tr>
+						</div>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="col-md-3">
+		<nav id="myScrollspy">
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a href="#Core-Faculty">Core Faculty</a></li>
+                    <li><a href="#Affiliated-Faculty">Affiliated Faculty</a></li>
+                    <li><a href="#Members">Members</a></li>
+                    <li><a href="#Alumni">Alumni</a></li>
+                </ul>
+            </nav>	
+            </div>
+		</div>
+	</div>
+</div>
+
+<div class="footer_wrapper">
+	<div class="container">
+		<div class="footer">
+			<div class="footer_content">
+				<div class="col-sm-12">
+					<ul>
+						<li><a href="http://www.emory.edu" target="_blank">Emory University</a>|</li>
+						<li><a href="http://www.sph.emory.edu" target="_blank">The Rollins School of Public Health</a>|</li>
+						<li><a href="http://www.sph.emory.edu/bios/index.php" target="_blank">Department of Biostatistics</a>|</li>		
+						<li><a href="http://www.sph.emory.edu/bios/index.php" target="_blank">Terms & Conditions</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="col-sm-12 copyright text-center">
+				<p>Copyright © 2015 Center for Biomedical Imaging Statistics. All rights reserved.</p>
+				<h4>CBIS</h4>	
+			</div>
+		</div><!--footer-->	
+	</div>
+</div><!--footer_wrapper-->
+  <!--wrapper-->
+<script type="text/javascript">
+	$(document).ready(function() {/* var defaults = {containerID: 'toTop', // fading element id containerHoverID: 'toTopHover', // fading element hover id scrollSpeed: 1200, easingType: 'linear'}; */ 
+	$().UItoTop({ easingType: 'easeOutQuart' }); });
+	(function($){$.fn.UItoTop=function(options){var defaults={text:'To Top',min:200,inDelay:600,outDelay:400,containerID:'toTop',containerHoverID:'toTopHover',scrollSpeed:1000,easingType:'linear'},settings=$.extend(defaults,options),containerIDhash='#'+settings.containerID,containerHoverIDHash='#'+settings.containerHoverID;$('body').append('<a href="#" id="'+settings.containerID+'">'+settings.text+'</a>');$(containerIDhash).hide().on('click.UItoTop',function(){$('html, body').animate({scrollTop:0},settings.scrollSpeed,settings.easingType);$('#'+settings.containerHoverID,this).stop().animate({'opacity':0},settings.inDelay,settings.easingType);return false;}).prepend('<span id="'+settings.containerHoverID+'"></span>').hover(function(){$(containerHoverIDHash,this).stop().animate({'opacity':1},600,'linear');},function(){$(containerHoverIDHash,this).stop().animate({'opacity':0},700,'linear');});$(window).scroll(function(){var sd=$(window).scrollTop();if(typeof document.body.style.maxHeight==="undefined"){$(containerIDhash).css({'position':'absolute','top':sd+$(window).height()-50});}
+if(sd>settings.min)
+$(containerIDhash).fadeIn(settings.inDelay);else
+$(containerIDhash).fadeOut(settings.Outdelay);});};})(jQuery);
+</script>
+<a href="#" id="toTop" style="display: block;"> 
+<span id="toTopHover" style="opacity: 1;"></span></a>
+</body>
+</html>

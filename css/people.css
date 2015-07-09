@@ -1,0 +1,68 @@
+/* -------- header jumbotron ----------- */
+.jumbotron {
+    background: url("../images/people_bgd.png") no-repeat center center; 
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    padding: 0px;
+}
+
+.header {
+	font: 13px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align: center;
+	background-color:rgba(51,51,51,0.7);
+	background-size: cover;
+}
+
+.header img {
+	margin-top: 150px;
+	height: 200px;
+}
+
+.header h1 {
+	margin-top: 70px;
+	color: white;
+	font-weight: bold;
+}
+
+.header p {
+	color: white;
+	margin-bottom: 45px;
+}
+
+.page-header {
+	padding-bottom: 9px;
+	margin: 40px 0 20px;
+	border-bottom: 1px solid #eee;
+}
+
+.page-header {
+	font-size: 36px;
+	font-weight: 500;
+	line-height: 1.1;
+}
+li p {
+	margin-bottom: 3px;
+}
+
+#Core-Faculty {
+	position: relative;
+	padding-top: 100px;
+}
+
+#Affiliated-Faculty {
+	position: relative;
+	padding-top: 100px;
+}
+
+#Members {
+	position: relative;
+	padding-top: 100px;
+}
+
+#Alumni {
+	position: relative;
+	padding-top: 100px;
+}
+
