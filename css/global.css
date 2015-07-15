@@ -135,6 +135,10 @@ body {
 	position: fixed;
 }
 
+.top-60 {
+	top: 60px;
+}
+
 /* ------------ bs docs ------------- */
 .bs-docs-featurette {
 	padding-top: 70px;
