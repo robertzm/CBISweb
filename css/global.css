@@ -1,3 +1,82 @@
+html {
+	height: 100%
+}
+ 
+body.hs-blog-post{
+	font-size: 17px;
+	font-family: Museo-sans,'Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-weight: 300;
+	line-height: 1.5em;
+	letter-spacing: .01em;
+	-webkit-font-smoothing: subpixel-antialiased;
+	height: 100%;
+	z-index: -1;
+}
+
+body.hs-blog-post h1,body.hs-blog-post h2,body.hs-blog-post h3,body.hs-blog-post h4,body.hs-blog-post h5,body.hs-blog-post h6 {
+	font-family: Museo-sans,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+body.hs-blog-post h1{
+	font-weight:300
+}
+
+body.hs-blog-post h2{
+	font-weight:300;
+}
+ 
+body.hs-blog-post h3{
+	font-weight:500;
+}
+ 
+body.hs-blog-post h4,body.hs-blog-post h5,body.hs-blog-post h6 {
+	font-size: 17px;
+	font-weight:700;
+}
+ 
+body.hs-blog-post a{
+	color: #0a8cc4;
+	text-decoration:none;
+}
+ 
+body.hs-blog-post a:focus,body.hs-blog-post a:hover {
+	color: #b0007f;
+	text-decoration:none;
+}
+ 
+body.hs-blog-post p{
+  	line-height: 1.5em;
+}
+ 
+body.hs-blog-post ol{
+  	padding-left: 22px;
+}
+ 
+body.hs-blog-post ul{
+  	padding-left: 16px;
+}
+ 
+body.hs-blog-post ol ol,body.hs-blog-post ol ul,body.hs-blog-post ul ol,body.hs-blog-post ul ul {
+  	padding-left: 40px;
+}
+ 
+body.hs-blog-post ul.dropdown-menu{
+  	list-style-type: none;
+}
+
+body.hs-blog-post li{
+  	color: #333;
+  	line-height:1.5em;
+}
+ 
+body.hs-blog-post hr{
+  	border-top: 1px solid #d1d1d1;
+}
+ 
+body.hs-blog-post label{
+  	font-weight: 400;
+}
+/*
 body {
 	position: relative;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -5,9 +84,11 @@ body {
 	line-height: 1.42857143;
 	color: #333;
 	background-color: #fff;
+	z-index: -1;
 }
+*/
 
-/* --------- top navigation ----------- */
+/* --------- top navigation ----------- 
 .navbar-inverse {
     background: rgba(0,0,0,0.8);
     border-radius: 5px;
@@ -39,6 +120,7 @@ body {
 	text-decoration: none;
 	text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.4);
 }
+*/
 
 /* ----------- side naigation ---------- */
   ul.nav-pills {
@@ -50,8 +132,7 @@ body {
   }
 
 .isfixed {
-	top: 80px;
-   position: fixed;
+	position: fixed;
 }
 
 /* ------------ bs docs ------------- */
