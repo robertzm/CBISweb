@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Center for Biomedical Imaging Statistics (CBIS)</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<link href="css/global.css" rel="stylesheet">
+	<link href="css/people.css" rel="stylesheet">
+	<script>
+            $(window).scroll(function(){
+                var ref_min = $("#myScrollspy")[0];
+                if(!ref_min)
+                    return;
+                if($(window).scrollTop() > $("#Introduction").offset().top -120 ){
+                    $("#myScrollspy").addClass("isfixed");
+                    $("#myScrollspy").addClass("top-60");
+                }else{
+                    $("#myScrollspy").removeClass("isfixed");
+                    $("#myScrollspy").removeClass("top-60");
+                }
+            });
+            $(window).on("hashchange", function () {
+                    window.scrollTo(window.scrollX, window.scrollY - 100);
+            });
+    </script>
+</head>
+
+<body class="bs-docs" data-spy="scroll" data-target="#myScrollspy" data-offset="500">
+	<div class="bkg-white z-index-5 isfixed width-100">
+	    <header style="height: 102px; margin-bottom: 5px;">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-xs-12 hidden-xs">
+	                <a rel="home" href="index.html" style="display: inline-block; vertical-align: top; margin-top: 15px;">
+	                    <div id="dato-logo"></div>
+	                </a>
+	                <nav style="display: inline-block; margin-top: 56px">
+	                    <ul class="list-inline">
+	                        <li><a href="#">Aboutus</a></li>
+	                        <li><a href="people.html">People</a>
+	                            <div class="dropdown">
+	                                <div class="space"></div>
+	                                <div class="arrow"></div>
+	                                <ul class="dropdown-menu" role="menu">
+	                                    <li><a role="menuitem" tabindex="-1" href="people.html#Core-Faculty">Core Faculty</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="people.html#Affiliated-Faculty">Affiliated Faculty</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="people.html#Members">Members</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="people.html#Alumni">Alumni</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="people.html#Collaborators">Collaborators</a></li>
+	                                </ul>
+	                            </div>
+	                        </li>
+	                        <li><a href="research.html">Research</a>
+	                            <div class="dropdown">
+	                                <div class="space"></div>
+	                                <div class="arrow"></div>
+	                                <ul class="dropdown-menu" role="menu">
+	                                    <li><a role="menuitem" tabindex="-1" href="research.html#">Research 1</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="research.html#">Research 2</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="research.html#">Research 3</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="research.html#">Research 4</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="research.html#">Research 5</a></li>
+	                                </ul>
+	                            </div>
+	                        </li>
+	                        <li><a href="publications.html">Publications</a>
+	                            <div class="dropdown">
+	                                <div class="space"></div>
+	                                <div class="arrow"></div>
+	                                <ul class="dropdown-menu" role="menu">
+	                                    <li><a role="menuitem" tabindex="-1" href="publications.html#">Methodology</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="publications.html#">Applications</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="publications.html#">Presentations</a></li>
+	                                </ul>
+	                            </div>
+	                        </li>
+	                        <li><a href="grants.html">Grants</a>
+	                            <div class="dropdown">
+	                                <div class="space"></div>
+	                                <div class="arrow"></div>
+	                                <ul class="dropdown-menu" role="menu">
+	                                    <li><a role="menuitem" tabindex="-1" href="grants.html#">Grants 1</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="grants.html#">Grants 2</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="grants.html#">Grants 3</a></li>
+	                                </ul>
+	                            </div>
+	                        </li>
+	                        <li><a href="downloads.html">Downloads</a>
+	                            <div class="dropdown">
+	                                <div class="space"></div>
+	                                <div class="arrow"></div>
+	                                <ul class="dropdown-menu" role="menu">
+	                                    <li><a role="menuitem" tabindex="-1" href="downloads.html#">Softwares</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="downloads.html#">Whatever</a></li>
+	                                </ul>
+	                            </div>
+	                        </li>
+	                    </ul>
+	                </nav>
+	                <div class="pull-right header-contact">
+	                    <div>
+	                        <a class="btn btn-primary" href="contactus.html">Contact Us</a>
+	                    </div>
+	                </div>
+	                </div>
+	            </div>
+	        </div>
+	    </header>
+    </div>
+<!-- TopNavbar 
+<nav id="navigater" class="navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="brand">
+			<a class="navbar-brand" href="#">CBIS</a>
+		</div>
+		<div>
+			<ul class="nav navbar-nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li class="active"><a href="#">People</a></li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Research <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Proj 1 </a></li>
+						<li><a href="#">Proj 2 </a></li>
+						<li><a href="#">Proj 3 </a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Publications <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Methodology </a></li>
+						<li><a href="#">Applications </a></li>
+						<li><a href="#">Presentation </a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Grants <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Column 1 </a></li>
+						<li><a href="#">Column 2 </a></li>
+						<li><a href="#">Column 3 </a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Softwares <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">sub 1 </a></li>
+						<li><a href="#">sub 2 </a></li>
+						<li><a href="#">sub 3 </a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+-->
+
+<!-- Header 
+<div class="jumbotron">
+	<div class="header">
+	<div class="container">
+		<img src="images/CBIS.png" />	
+		<h1>People</h1>
+		<hr>
+		<p>This is our simple introduction, if you have any better text, please tell me to replace it.</p>	
+	</div>
+	</div>
+</div>-->
+	<div class="empty" style="height: 107px"></div>
+    <div class="header-main bkg-green rel">
+	    <div class="grid-100 cell-first cell-last top-30 bottom-10 squares">
+	        <div class="gutter-bottom center-div-980">
+	            <h1 class="font-40 font-white normal">About Us</h1>
+	            <h2 class="font-18 normal font-white">Intro in (12 - 15 words)...</h2>
+	            <div class="gray-shadow gray-top">&nbsp;</div>
+	            <div class="gray-shadow gray-bottom">&nbsp;</div>
+	        </div>
+		</div>
+	</div>
+<div class="container bs-docs-container">
+	<div class="row">
+		<div class="col-md-9" role="main">
+			<div id="Introduction" class="bs-docs-section">
+				<h1 class="page-header">
+			    Introduction	
+				</h1>
+                <p>The Center for Biomedical Imaging Statistics (CBIS) conducts research on 
+                statistical methods for analyzing data from biomedical imaging studies. CBIS 
+                research includes brain, heart, breast, and prostate imaging, among others. 
+                CBIS currently develops statistical methods for data acquired from various 
+                imaging modalities including functional and structural magnetic resonance 
+                imaging, positron emission tomography, single photon emission computed 
+                tomography, and digital mammograhphy.
+                </p>
+                <p>
+                CBIS is a part of the 
+                <a href="http://www.sph.emory.edu/" >Rollins School of Public Health</a>
+                (RSPH) at 
+                <a href="http://www.emory.edu"> Emory University</a> 
+                in Atlanta, GA, and we actively collaborate with other imaging 
+                scientists around the university. We are physically located in the 
+                <a href="http://www.sph.emory.edu/bios/index.php">Department of Biostatistics</a> 
+                in RSPH. The Department of Biostatistics and Bioinformatics 
+                offers a Ph. D. degree in biostatistics, with a concentration in neuroimaging, 
+                through the BGIN Training Program  sponsored by the 
+                <a href="http://www.nih.gov">National Institutes of Health</a>
+                (NIH).
+                </p>
+                <p>
+                Some achievements of CBIS members and collaborators can be found in our 
+                <em>
+                    <a href="files/CBIS_Evaluation.pdf" target="_blank">CBIS Five-Year Report</a>
+                </em>
+                .
+                </p>
+			</div>	
+			<div id="TeamPhoto" class="bs-docs-section">
+				<h1 class="page-header">
+			    Our Teammates	
+				</h1>
+                <img src="images/CBIS-2014_hr.jpg" alt="CBIS team" height="500"/>
+			</div>
+			<div id="ContactInfo" class="bs-docs-section">
+				<h1 class="page-header">
+			    Contact Us	
+				</h1>
+                <p>CBIS is located in the Rollins School of Public Health at Emory 
+                University. We are on the 3rd floor of the Grace Crum Rollins Building 
+                at Emory. 
+                </p>
+                <p>
+                For more information, please contact 
+                </p>
+                <p>
+                Department of Biostatistics<br> 
+                Rollins School of Public Health<br> 
+                Grace Crum Rollins Building<br> 
+                1518 Clifton Road, N.E.<br> 
+                Atlanta, Georgia 30322<br> 
+                (404) 727-7697<br> 
+                </p>
+                <p>
+                <a href="mailto:dbowma3@sph.emory.edu">Email:   dbowma3@sph.emory.edu</a>
+                </p> 
+
+			</div>
+		</div>
+		<div class="col-md-3">
+		<nav id="myScrollspy">
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a href="#Introduction">Introduction</a></li>
+                    <li><a href="#TeamPhoto">Our Teammates</a></li>
+                    <li><a href="#ContactInfo">Contact Us</a></li>
+                </ul>
+            </nav>	
+            </div>
+		</div>
+	</div>
+</div>
+
+<div class="footer_wrapper">
+	<div class="container">
+		<div class="footer">
+			<div class="footer_content">
+				<div class="col-sm-12">
+					<ul>
+						<li><a href="http://www.emory.edu" target="_blank">Emory University</a>|</li>
+						<li><a href="http://www.sph.emory.edu" target="_blank">The Rollins School of Public Health</a>|</li>
+						<li><a href="http://www.sph.emory.edu/bios/index.php" target="_blank">Department of Biostatistics</a>|</li>		
+						<li><a href="http://www.sph.emory.edu/bios/index.php" target="_blank">Terms & Conditions</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="col-sm-12 copyright text-center">
+				<p>Copyright © 2015 Center for Biomedical Imaging Statistics. All rights reserved.</p>
+				<h4>CBIS</h4>	
+			</div>
+		</div><!--footer-->	
+	</div>
+</div><!--footer_wrapper-->
+  <!--wrapper-->
+<script type="text/javascript">
+	$(document).ready(function() {/* var defaults = {containerID: 'toTop', // fading element id containerHoverID: 'toTopHover', // fading element hover id scrollSpeed: 1200, easingType: 'linear'}; */ 
+	$().UItoTop({ easingType: 'easeOutQuart' }); });
+	(function($){$.fn.UItoTop=function(options){var defaults={text:'To Top',min:200,inDelay:600,outDelay:400,containerID:'toTop',containerHoverID:'toTopHover',scrollSpeed:1000,easingType:'linear'},settings=$.extend(defaults,options),containerIDhash='#'+settings.containerID,containerHoverIDHash='#'+settings.containerHoverID;$('body').append('<a href="#" id="'+settings.containerID+'">'+settings.text+'</a>');$(containerIDhash).hide().on('click.UItoTop',function(){$('html, body').animate({scrollTop:0},settings.scrollSpeed,settings.easingType);$('#'+settings.containerHoverID,this).stop().animate({'opacity':0},settings.inDelay,settings.easingType);return false;}).prepend('<span id="'+settings.containerHoverID+'"></span>').hover(function(){$(containerHoverIDHash,this).stop().animate({'opacity':1},600,'linear');},function(){$(containerHoverIDHash,this).stop().animate({'opacity':0},700,'linear');});$(window).scroll(function(){var sd=$(window).scrollTop();if(typeof document.body.style.maxHeight==="undefined"){$(containerIDhash).css({'position':'absolute','top':sd+$(window).height()-50});}
+if(sd>settings.min)
+$(containerIDhash).fadeIn(settings.inDelay);else
+$(containerIDhash).fadeOut(settings.Outdelay);});};})(jQuery);
+</script>
+<a href="#" id="toTop" style="display: block;"> 
+<span id="toTopHover" style="opacity: 1;"></span></a>
+</body>
+</html>

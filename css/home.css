@@ -117,7 +117,7 @@ i.icon3{
 	font-family: sans-serif;
 }
 .carousel-indicators {
-	bottom:-50px;
+	bottom: -10px;
 	z-index: 0;
 }
 .carousel-indicators li {
