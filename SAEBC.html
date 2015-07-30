@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Center for Biomedical Imaging Statistics (CBIS)</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<link href="css/global.css" rel="stylesheet">
+	<link href="css/people.css" rel="stylesheet">
+	<script>
+            $(window).scroll(function(){
+                var ref_min = $("#myScrollspy")[0];
+                if(!ref_min)
+                    return;
+                if($(window).scrollTop() > $("#Introduction").offset().top -120 ){
+                    $("#myScrollspy").addClass("isfixed");
+                    $("#myScrollspy").addClass("top-60");
+                }else{
+                    $("#myScrollspy").removeClass("isfixed");
+                    $("#myScrollspy").removeClass("top-60");
+                }
+            });
+            $(window).on("hashchange", function () {
+                    window.scrollTo(window.scrollX, window.scrollY - 100);
+            });
+    </script>
+</head>
+
+<body class="bs-docs" data-spy="scroll" data-target="#myScrollspy" data-offset="500">
+	<div class="bkg-white z-index-5 isfixed width-100">
+	    <header style="height: 102px; margin-bottom: 5px;">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-xs-12 hidden-xs">
+	                <a rel="home" href="index.html" style="display: inline-block; vertical-align: top; margin-top: 15px;">
+	                    <div id="dato-logo"></div>
+	                </a>
+	                <nav style="display: inline-block; margin-top: 56px">
+	                    <ul class="list-inline">
+	                        <li><a href="aboutus.html">Aboutus</a></li>
+	                        <li><a href="people.html">People</a>
+	                            <div class="dropdown">
+	                                <div class="space"></div>
+	                                <div class="arrow"></div>
+	                                <ul class="dropdown-menu" role="menu">
+	                                    <li><a role="menuitem" tabindex="-1" href="people.html#Core-Faculty">Core Faculty</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="people.html#Affiliated-Faculty">Affiliated Faculty</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="people.html#Members">Members</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="people.html#Alumni">Alumni</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="people.html#Collaborators">Collaborators</a></li>
+	                                </ul>
+	                            </div>
+	                        </li>
+	                        <li><a href="research.html">Research</a>
+	                            <div class="dropdown">
+	                                <div class="space"></div>
+	                                <div class="arrow"></div>
+	                                <ul class="dropdown-menu" role="menu">
+	                                    <li><a role="menuitem" tabindex="-1" href="#">Research 1</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="research.html#">Research 2</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="research.html#">Research 3</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="research.html#">Research 4</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="research.html#">Research 5</a></li>
+	                                </ul>
+	                            </div>
+	                        </li>
+	                        <li><a href="methodology.html">Publications</a>
+	                            <div class="dropdown">
+	                                <div class="space"></div>
+	                                <div class="arrow"></div>
+	                                <ul class="dropdown-menu" role="menu">
+	                                    <li><a role="menuitem" tabindex="-1" href="methodology.html#">Methodology</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="applications.html#">Applications</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="presentations.html#">Presentations</a></li>
+	                                </ul>
+	                            </div>
+	                        </li>
+	                        <li><a href="grants.html">Grants</a></li>
+	                        <li><a href="downloads.html">Downloads</a>
+	                            <div class="dropdown">
+	                                <div class="space"></div>
+	                                <div class="arrow"></div>
+	                                <ul class="dropdown-menu" role="menu">
+	                                    <li><a role="menuitem" tabindex="-1" href="downloads.html#">Softwares</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="downloads.html#">Whatever</a></li>
+	                                </ul>
+	                            </div>
+	                        </li>
+	                    </ul>
+	                </nav>
+	                <div class="pull-right header-contact">
+	                    <div>
+	                        <a class="btn btn-primary" href="contactus.html">Contact Us</a>
+	                    </div>
+	                </div>
+	                </div>
+	            </div>
+	        </div>
+	    </header>
+    </div>
+
+<div class="empty" style="height: 107px"></div>
+
+<div class="header-main bkg-green rel">
+    <div class="grid-100 cell-first cell-last top-30 bottom-10 squares">
+        <div class="gutter-bottom center-div-980">
+            <h1 class="font-40 font-white normal">Statistical Approaches for Exploring Brain Connectivity with 
+                Multi-Modal Neuroimaging Data</h1>
+            <h2 class="font-20 normal font-white">Phebe B. Kemmer<sup>1</sup>, Ying Guo<sup>1</sup>, F. DuBois Bowman<sup>2</sup></h2>
+            <h4 class="font-16 normal font-white"> <sup>1</sup>Department of Biostatistics and Bioinformatics, Emory University; <sup>2</sup>Department of Biostatistics, Columbia University
+            </h4>
+            <div class="gray-shadow gray-top">&nbsp;</div>
+            <div class="gray-shadow gray-bottom">&nbsp;</div>
+        </div>
+    </div>
+</div>
+
+<div class="container bs-docs-container">
+	<div class="row">
+		<div class="col-md-9" role="main">
+			<div id="Introduction" class="bs-docs-section">
+				<h1 class="page-header">
+			    INTRODUCTION	
+				</h1>
+                <p>Two main classes of brain imaging:</p> 
+                <ul>
+                    <li><p>Functional: commonly measured by <b>fMRI</b></p></li>
+                    <li><p>Structural: measured by diffusion tensor imaging (<b>DTI</b>)</p></li>
+                </ul>
+
+                <p>
+                <b>Functional Connectivity (FC)</b> measures the temporal coherence between the BOLD signal (a proxy for brain activity) of spatially remote brain locations.
+                </p>
+                <ul>
+                    <li><p><b>FC network</b>: a set of functionally connected brain regions</p></li>
+                    <li><p>FC networks can be identified from fMRI data.</p></li> 
+                    <li><p><b>Independent Component Analysis (ICA)</b> is a popular data-driven method for extracting FC networks, and has several advantages over other techniques.</p></li>
+                </ul>
+
+                <p>
+                <b>Structural Connectivity (SC)</b> measures the anatomical connections between brain areas
+                </p>
+                <ul>
+                    <li><p><b>Probabilistic tractography</b> estimates the SC distribution in the brain based on DTI data.</p></li>
+                </ul>
+
+                <p>
+                FC analysis excludes information about the underlying structural connectivity in the brain, yet it is thought that structural fiber tracts facilitate inter-regional interactions in brain activity.
+                </p>
+
+                <p>
+                <b>Why combine information across modalities (i.e. fMRI and DTI)?</b>
+                </p>
+                <ol>
+                    <li><p><b>To better understand the relationship between brain structure and function.</b> FC is usually, but not always accompanied by strong SC3</p></li>
+                    <li><p><b>To characterize pathophysiology of disease.</b> Many disorders exhibit disruptions in FC and/or SC (e.g. Multiple Sclerosis, Stroke, Alzheimer’s Disease)</p></li>
+                </ol>
+
+                <p>
+                <b>Our Goal</b>: develop statistical methods that combine FC and SC, and provide a convenient framework to conduct statistical inference
+                </p>
+                <p>
+                <img src="images/research/pic_phebe_1.png" width="400"/>
+			</div>	
+			<div id="Methods" class="bs-docs-section">
+				<h1 class="page-header">
+			    METHODS	
+				</h1>
+                <p><b>Research Questions:</b></p>
+                <ol>
+                    <li><p>What is the strength of SC underlying FC networks estimated by data-driven methods like ICA ?</p></li>
+                    <li><p>Due to the stochastic nature of ICA, results vary. Can SC be used to inform the reliability of FC networks estimated by ICA?</p></li>
+                </ol>
+                <p>We propose a novel measure of the strength of SC (sSC) underlying an FC network:</p>
+                <img src="images/research/pic_phebe_2.png" width="850" />
+                <ul>
+                    <li><p>The <b>sSC measure</b> represents the above-baseline strength of SC underlying an FC network.</p></li>
+                    <li><p>We divide by the maximum possible value to standardize and make comparable between FC networks of different sizes</p></li>
+                </ul>
+                <p><u>Inference Framework</u></p>
+                <img src="images/research/pic_phebe_3.png" width="850" />
+                <p><u>Hypothesis testing:</u></p>
+                <img src="images/research/pic_phebe_4.png" width="850" />
+			</div>
+			<div id="Simulation" class="bs-docs-section">
+				<h1 class="page-header">
+			    SIMULATION STUDIES	
+				</h1>
+                <img src="images/research/pic_phebe_5.png" width="850" />
+			</div>
+			<div id="Data" class="bs-docs-section">
+				<h1 class="page-header">
+			    DATA APPLICATION	
+				</h1>
+                <p><u>Data</u></p>
+                <ul>
+                    <li><p>resting-state fMRI and DTI scans for 20 subjects with Major Depressive Disorder (MDD) &amp 20 healthy controls</p></li>
+                    <li><p>Studies of MDD do not agree about the mechanism of connectivity disruption, and the pathology is unclear4</p></li>
+                </ul>
+                <p><u>Analysis</u></p>
+                <ul>
+                    <li><p>Group ICA on controls’ rs-fMRI data yields 9 resting state networks:</p>
+                    <img src="images/research/pic_phebe_6.png" width="650" />
+                    </li>
+                    <li><p>For each IC, estimate the SC distribution by running a probabilistic tractography procedure, initiating N=5000 streams from each voxel in the IC mask.</p>
+                    <p><b>Results:</b></p>
+                    <img src="images/research/pic_phebe_7.png" width="550" />
+                    </li>
+                </ul>
+			</div>
+			<div id="Conclusions" class="bs-docs-section">
+				<h1 class="page-header">
+			    CONCLUSTIONS	
+				</h1>
+                <ul>
+                    <li><p>The proposed sSC measure combines info from the fMRI and DTI modalities</p></li>
+                    <li><p>sSC can be used to inform the reliability of networks estimated by ICA</p></li>
+                </ul>
+			</div>
+			<div id="References" class="bs-docs-section">
+				<h1 class="page-header">
+			    REFERENCES 
+				</h1>
+                <ol class="bottom-20">
+                    <li><p>Smith et al., 2009</p></li>
+                    <li><p>Calhoun et al., 2009</p></li>
+                    <li><p>Damoiseaux &amp Greicius et al., 2009</p></li>
+                    <li><p>Northoff et al., 2009</p></li>
+                </ol>
+			</div>
+		</div>
+		<div class="col-md-3">
+		<nav id="myScrollspy">
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a href="#Introduction">Introduction</a></li>
+                    <li><a href="#Methods">Methods</a></li>
+                    <li><a href="#Simulation">Simulation Studies</a></li>
+                    <li><a href="#Data">Data Application</a></li>
+                    <li><a href="#Conclusions">Conclusions</a></li>
+                    <li><a href="#References">References</a></li>
+                </ul>
+            </nav>	
+            </div>
+		</div>
+	</div>
+</div>
+
+<div class="footer_wrapper">
+	<div class="container">
+		<div class="footer">
+			<div class="footer_content">
+				<div class="col-sm-12">
+					<ul>
+						<li><a href="http://www.emory.edu" target="_blank">Emory University</a>|</li>
+						<li><a href="http://www.sph.emory.edu" target="_blank">The Rollins School of Public Health</a>|</li>
+						<li><a href="http://www.sph.emory.edu/bios/index.php" target="_blank">Department of Biostatistics</a>|</li>		
+						<li><a href="http://www.sph.emory.edu/bios/index.php" target="_blank">Terms & Conditions</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="col-sm-12 copyright text-center">
+				<p>Copyright © 2015 Center for Biomedical Imaging Statistics. All rights reserved.</p>
+				<h4>CBIS</h4>	
+			</div>
+		</div><!--footer-->	
+	</div>
+</div><!--footer_wrapper-->
+  <!--wrapper-->
+<script type="text/javascript">
+	$(document).ready(function() {/* var defaults = {containerID: 'toTop', // fading element id containerHoverID: 'toTopHover', // fading element hover id scrollSpeed: 1200, easingType: 'linear'}; */ 
+	$().UItoTop({ easingType: 'easeOutQuart' }); });
+	(function($){$.fn.UItoTop=function(options){var defaults={text:'To Top',min:200,inDelay:600,outDelay:400,containerID:'toTop',containerHoverID:'toTopHover',scrollSpeed:1000,easingType:'linear'},settings=$.extend(defaults,options),containerIDhash='#'+settings.containerID,containerHoverIDHash='#'+settings.containerHoverID;$('body').append('<a href="#" id="'+settings.containerID+'">'+settings.text+'</a>');$(containerIDhash).hide().on('click.UItoTop',function(){$('html, body').animate({scrollTop:0},settings.scrollSpeed,settings.easingType);$('#'+settings.containerHoverID,this).stop().animate({'opacity':0},settings.inDelay,settings.easingType);return false;}).prepend('<span id="'+settings.containerHoverID+'"></span>').hover(function(){$(containerHoverIDHash,this).stop().animate({'opacity':1},600,'linear');},function(){$(containerHoverIDHash,this).stop().animate({'opacity':0},700,'linear');});$(window).scroll(function(){var sd=$(window).scrollTop();if(typeof document.body.style.maxHeight==="undefined"){$(containerIDhash).css({'position':'absolute','top':sd+$(window).height()-50});}
+if(sd>settings.min)
+$(containerIDhash).fadeIn(settings.inDelay);else
+$(containerIDhash).fadeOut(settings.Outdelay);});};})(jQuery);
+</script>
+<a href="#" id="toTop" style="display: block;"> 
+<span id="toTopHover" style="opacity: 1;"></span></a>
+</body>
+</html>

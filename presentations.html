@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Center for Biomedical Imaging Statistics (CBIS)</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<link href="css/global.css" rel="stylesheet">
+	<link href="css/people.css" rel="stylesheet">
+	<script>
+            $(window).scroll(function(){
+                var ref_min = $("#myScrollspy")[0];
+                if(!ref_min)
+                    return;
+                if($(window).scrollTop() > $("#Presentations").offset().top -120 ){
+                    $("#myScrollspy").addClass("isfixed");
+                    $("#myScrollspy").addClass("top-60");
+                }else{
+                    $("#myScrollspy").removeClass("isfixed");
+                    $("#myScrollspy").removeClass("top-60");
+                }
+            });
+            $(window).on("hashchange", function () {
+                    window.scrollTo(window.scrollX, window.scrollY - 100);
+            });
+    </script>
+</head>
+
+<body class="bs-docs" data-spy="scroll" data-target="#myScrollspy" data-offset="500">
+	<div class="bkg-white z-index-5 isfixed width-100">
+	    <header style="height: 102px; margin-bottom: 5px;">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-xs-12 hidden-xs">
+	                <a rel="home" href="index.html" style="display: inline-block; vertical-align: top; margin-top: 15px;">
+	                    <div id="dato-logo"></div>
+	                </a>
+	                <nav style="display: inline-block; margin-top: 56px">
+	                    <ul class="list-inline">
+	                        <li><a href="aboutus.html">Aboutus</a></li>
+	                        <li><a href="people.html">People</a>
+	                            <div class="dropdown">
+	                                <div class="space"></div>
+	                                <div class="arrow"></div>
+	                                <ul class="dropdown-menu" role="menu">
+	                                    <li><a role="menuitem" tabindex="-1" href="people.html#Core-Faculty">Core Faculty</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="people.html#Affiliated-Faculty">Affiliated Faculty</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="people.html#Members">Members</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="people.html#Alumni">Alumni</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="people.html#Collaborators">Collaborators</a></li>
+	                                </ul>
+	                            </div>
+	                        </li>
+	                        <li><a href="research.html">Research</a>
+	                            <div class="dropdown">
+	                                <div class="space"></div>
+	                                <div class="arrow"></div>
+	                                <ul class="dropdown-menu" role="menu">
+	                                    <li><a role="menuitem" tabindex="-1" href="SAEBC.html#">Research 1</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="research.html#">Research 2</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="research.html#">Research 3</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="research.html#">Research 4</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="research.html#">Research 5</a></li>
+	                                </ul>
+	                            </div>
+	                        </li>
+	                        <li><a href="methodology.html">Publications</a>
+	                            <div class="dropdown">
+	                                <div class="space"></div>
+	                                <div class="arrow"></div>
+	                                <ul class="dropdown-menu" role="menu">
+	                                    <li><a role="menuitem" tabindex="-1" href="methodology.html#">Methodology</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="applications.html#">Applications</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="#">Presentations</a></li>
+	                                </ul>
+	                            </div>
+	                        </li>
+	                        <li><a href="grants.html">Grants</a></li>
+	                        <li><a href="downloads.html">Downloads</a>
+	                            <div class="dropdown">
+	                                <div class="space"></div>
+	                                <div class="arrow"></div>
+	                                <ul class="dropdown-menu" role="menu">
+	                                    <li><a role="menuitem" tabindex="-1" href="downloads.html#">Softwares</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="downloads.html#">Whatever</a></li>
+	                                </ul>
+	                            </div>
+	                        </li>
+	                    </ul>
+	                </nav>
+	                <div class="pull-right header-contact">
+	                    <div>
+	                        <a class="btn btn-primary" href="aboutus.html#ContactInfo">Contact Us</a>
+	                    </div>
+	                </div>
+	                </div>
+	            </div>
+	        </div>
+	    </header>
+    </div>
+
+<div class="empty" style="height: 107px"></div>
+
+<div class="header-main bkg-green rel">
+    <div class="grid-100 cell-first cell-last top-30 bottom-10 squares">
+        <div class="gutter-bottom center-div-980">
+            <h1 class="font-40 font-white normal">Publications</h1>
+            <h2 class="font-18 normal font-white">Intro in (12 - 15 words)...</h2>
+            <div class="gray-shadow gray-top">&nbsp;</div>
+            <div class="gray-shadow gray-bottom">&nbsp;</div>
+        </div>
+    </div>
+</div>
+
+<div class="container bs-docs-container bottom-60">
+	<div class="row">
+		<div class="col-md-9" role="main">
+			<div id="Presentations" class="bs-docs-section">
+				<h1 class="page-header">
+			    PRESENTATIONS	
+				</h1>
+			</div>	
+            <ul id="myTab" class="nav nav-tabs">
+                <li class="active"><a href="#all" data-toggle="tab">ALL</a></li>
+                <li><a href="#a" data-toggle="tab">2013-2015</a></li>
+                <li><a href="#b" data-toggle="tab">2010-2012</a></li>
+                <li><a href="#c" data-toggle="tab">2007-2009</a></li>
+                <li><a href="#d" data-toggle="tab">before 2007</a></li>
+            </ul>
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade in active" id="all">
+                    <ol>
+                        <li><p>Zhao, Y., Kang, J., Yu, T., (2014) <i><a href="http://arxiv.org/pdf/1407.8399.pdf">A Bayesian nonparametric mixture model for gene and gene-sub network selection,</a></i> Annals of Applied Statistics, accepted.</p></li>
+                        <li><p>Kang, J., Johnson T.D. (2014) <i><a href="http://arxiv.org/pdf/1407.8399.pdf">A slice sampler for the hierarchical Poisson/gamma random field model, Proceedings for Perspectives on High Dimensional Data Analysis II, </a></i> Contemporary Mathematics, American Mathematical Society, to appear.</p></li>
+                        <li><p>Guo, Y. and Tang Li (2013). <i><a href="http://arxiv.org/pdf/1407.8399.pdf">A hierarchical probabilistic model for group independent component analysis in fMRI studies.</a></i> Biometrics. 69(4):970-81.</p></li>
+                        <li><p>Kang, J. Yang, Y. (2013) <i><a href="http://arxiv.org/pdf/1407.8399.pdf">Joint modeling of mixed count and continuous longitudinal data.</a></i> Analysis of Mixed Data. A.R. de Leon and K. Carriere Chough (Eds). Chapman &amp Hall/CRC, chapter 4.</p></li>
+                        <li><p>Yikai, W., Yueqi, Z. (2013). <i><a href="http://arxiv.org/pdf/1407.8399.pdf">Graph Construction Based on Re-weighted Sparse Representation for Semi-supervised Learning.</a></i> JICS. 10(2): 375- 383.</p></li>
+                        <li><p>Bowman, F. D., Zhang, L., Derado, G., and Chen, S. (2012). <i><a href="http://arxiv.org/pdf/1407.8399.pdf">Determining Functional Connectivity using fMRI Data with Diffusion-Based Anatomical Weighting.</a></i> NeuroImage, 62: 1769-1779.</p></li>
+                        <li><p>Derado, G., Bowman, F. D., and Zhang, L. (2012). <i><a href="http://arxiv.org/pdf/1407.8399.pdf">Predicting Brain Activity using a Bayesian Spatial Model.</a></i> Statistical Methods in Medical Research (DOI: 10.1177/0962280212448972).</p></li>
+                        <li><p>Zhang, L., Agravat, S., Derado, G., Chen, S., McIntosh, B.J., and Bowman, F. D. (2012). <i><a href="http://arxiv.org/pdf/1407.8399.pdf">BSMac: A MATLAB toolbox Implementing a Bayesian Spatial Model for Brain Activation and Connectivity.</a></i> Journal of Neuroscience Methods . (DOI:10.1016/j.jneumeth.2011.10.025).</p></li>
+                        <li><p>Kang, J., Yang, Y. (2012). <i><a href="http://arxiv.org/pdf/1407.8399.pdf">Joint modeling of mixed count and continuous longitudinal data in Analysis of Mixed Data.</a></i> A.R. de Leon and K. Carriere Chough (Eds). Chapman &amp Hall/CRC, chapter 4, in press.</p></li>
+                        <li><p>Kang, J., Johnson, T. D., Nichols, T. E., Wager, T. D. (2012). <i><a href="">Local mixed-effects fitting for detecting reproductive hormone surge times. </a></i> Statistics in BioSciences, 4:245-261.</p></li>
+                        <li><p>Kang, J., Ye, W., Wang, L., Song, P. (2011). <i><a href="">Meta analysis of functional neuroimaging data via Bayesian spatial point processes. </a></i>Journal of the American Statistical Association, 106(493), 124-134. </p></li>
+                        <li><p>Chen, S. and Bowman, F. D. (2011). <i><a href="">A Novel Support Vector Classifier for Longitudinal High-dimensional Data and Its Application to Neuroimaging Data. </a></i>Statistical Analysis and Data Mining. 4(6):604-611.<b>[Winning paper for JSM 2011 Student Paper Competition, ASA Section on Statistical Learning and Data Mining].</b></p></li>
+                        <li><p>Guo Y (2011). <i><a href="">A general probabilistic for group independent component analysis and its estimation methods. </a></i>Biometrics. 67(4):1532-1542. </p></li>
+                        <li><p>Caffo, B., Bowman, F. D., Eberly, L., and Bassett, S. S. (2011). <i><a href="">A Markov Chain Monte Carlo Based Analysis of a Multilevel Model for Functional MRI Data, </a></i>Handbook of Markov Chain Monte Carlo: Methods and Applications, edited by Steve Brooks, Andrew Gelman, Galin Jones, and Xiao-Li Meng, Chapman &amp Hall. </p></li>
+                        <li><p>Kang, J., Johnson, T. D., Nichols, T. E., Wager, T. D. (2011). <i><a href="">Meta analysis of functional neuroimaging data via Bayesian spatial point processes. </a></i>Journal of the American Statistical Association, 106(493), 124-134. </p></li>
+                        <li><p>Derado, G., Bowman, F. D., Ely, T., and Kilts, C. (2010). <i><a href="">Evaluating Functional Autocorrelation within Spatially Distributed Neural Processing Clusters. </a></i>Statistics and Its Interface, 3:45-57. </p></li>
+                        <li><p>Guo Y (2010). <i><a href="">A weighted cluster kernel PCA prediction model for multi-subject brain imaging data. </a></i>Statistics And Its Interface. 3:103-111. </p></li>
+                        <li><p>Derado, G., Bowman, F. D., and Kilts, C. (2010). <i><a href="">Modeling the spatial and temporal dependence in fMRI data. </a></i> Biometrics, 66:949-957. </p></li>
+                        <li><p>Derado, G., Bowman, F. D., Ely, T., and Kilts, C. (2010). <i><a href="">Evaluating functional autocorrelation within spatially distributed neural processing clusters. </a></i>Statistics and Its Interface 3:45-47. </p></li>
+                        <li><p>Guo, Y. and Pagnoni, G. (2008). <i><a href="">A unified framework for group independent component analysis for multi-subject fMRI data. </a></i>NeuroImage, 42: 1078-1093. </p></li>
+                        <li><p>Guo, Y. (2008). <i><a href="">Group Independent Component Analysis of Multi-subject fMRI data: Connections and Distinctions between Two Methods. </a></i>Conference proceeding of International Conference on BioMedical Engineering and Informatics 2008. Hainan, China. </p></li>
+                        <li><p>Guo, Y. and Bowman, F. D. (2008). <i><a href="">Modeling Dose-Dependent Neural Processing Responses Using Mixed Effects Spline Models. </a></i>NeuroImage 40.2 (2008): 698-711. </p></li>
+                        <li><p>Guo, Y., Bowman, F. D., and Kilts, C. D. (2008). <i><a href="">Predicting the Brain Response to Treatment using a Bayesian Hierarchical Model with Application to a Study of Schizophrenia. </a></i>Human Brain Mapping, 29(9): 1092-1109. </p></li>
+                        <li><p>Bowman, F. D., Caffo, B. A, Bassett, S., and Kilts, C. (2008). <i><a href="">Bayesian Hierarchical Framework for Spatial Modeling of fMRI Data. </a></i>NeuroImage 39: 146-156.(<b>Published version</b>: NeuroImage; <b>Preprint</b>: http://www.bepress.com/jhubiostat/paper139; <b>BSMAC Software</b>: See Links tab). </p></li>
+                        <li><p>Bowman, F. D., Guo, Y., and Derado, G. (2007).  <i><a href="">tatistical Approaches to Neuroimaging Data. </a></i>Neuroimaging Clinics of North America:  Imaging of the Mind 17(4): Nov. 2007, 441-458. </p></li>
+                        <li><p>Bowman, F. D. , Guo, Y., and Derado, G. (2007). <i><a href="">Statistical Approaches to Neuroimaging Data. </a></i>Neuroimaging Clinics of North America: Imaging of the Mind 17(4): Nov. 2007. </p></li>
+                        <li><p>Bowman, F. D. (2007). <i><a href="">Spatio-Temporal Models for Region of Interest Analyses of Functional Neuroimaging Data, </a></i>Journal of the American Statistical Association 102(478): 442-453. </p></li>
+                        <li><p>Patel, R., Bowman, F. D., and Rilling, J. K. (2006b). <i><a href="">Determining Hierarchical Functional Networks from Auditory Stimuli fMRI. </a></i>Human Brain Mapping 27:462-470. </p></li>
+                        <li><p>Patel, R., Van De Ville, D., and Bowman, F. D. (2006). <i><a href="">Determining Significant Connectivity by 4D Spatiotemporal Wavelet Packet Resampling of Functional Neuroimaging Data. </a></i>NeuroImage 31: 1142-1155. </p></li>
+                        <li><p>Patel, R., Bowman, F. D., and Rilling, J. K. (2006a). <i><a href="">A Bayesian Approach to Determining Connectivity of the Human Brain. </a></i>Human Brain Mapping 27: 267-276. </p></li>
+                        <li><p>Bowman, F. D. <i><a href="">Spatiotemporal Modeling of Localized Brain Activity (2005). </a></i>Biostatistics 6(4): 558-575. </p></li>
+                        <li><p>Bowman, F. D. and Patel, R. (2004) <i><a href="">Identifying Spatial Relationships in Neural Processing Using a Multiple Classification Approach. </a></i>NeuroImage 23: 260-268. </p></li>
+                        <li><p>Bowman, F. D., Patel, R., and Lu, C. (2004) <i><a href="">Methods for Detecting Functional Classifications in Neuroimaging Data. </a></i> Human Brain Mapping 23(2): 109-119. </p></li>
+                        <li><p>Bowman, F. D. and Kilts, C. (2003). <i><a href="">Modeling Intra-subject Correlation Among Repeated Scans in Positron Emission Tomography (PET) Neuroimaging Data. </a></i>Human Brain Mapping 20(2): 59-70. </p></li>
+                        <li><p>Patel, R. S., Bowman, F. D., Guo, Y., and Derado, G. (2006). <i><a href="">Integrating Support Vector Machines, Supervised Principal Components, and Boosting to Interpret Brain Activity. </a></i>Pittsburgh Brain Activity Interpretation Competition.  the Organization for Human Brain Mapping, 12<sup>th</sup> Annual Meeting, Florence, Italy. </p></li>
+                        <li><p>Arfanakis, K., Gui, M., Tamhane, A. A., and Carew, J. D. (2007). <i><a href="">Investigating the Medial Temporal Lobe in Alzheimer's Disease and Mild Cognitive Impairment, with Turboprop Diffusion Tensor Imaging, MRI-volumetry, and T2-Relaxometry. </a></i>Brain Imaging and Behavior, 1: 11-21. </p></li>
+                        <li><p>Carew, J. D. <i><a href="">dr-ROC Summary Meta-analysis Software Version 2.0 (2007). </a></i>Academic Radiology, 14(6): 767-768. </p></li>
+                        <li><p>Bley, T. A., Uhl, M., Carew, J., Markl, M., Schmidt, D., Hans-Hartmut, P., Langer, M., and Wieben, O. (2007). <i><a href="">Diagnostic value of high resolution MRI in giant cell arteritis. </a></i>American Journal of Neuroradiology, 28:1722-1727. </p></li>
+                        <li><p> <i><a href=""> </a></i> </p></li>
+                    </ol>
+                </div>
+                <div class="tab-pane fade" id="a">
+                    <ol>
+                        <li><p>Zhao, Y., Kang, J., Yu, T., (2014) <i><a href="http://arxiv.org/pdf/1407.8399.pdf">A Bayesian nonparametric mixture model for gene and gene-sub network selection,</a></i> Annals of Applied Statistics, accepted.</p></li>
+                        <li><p>Kang, J., Johnson T.D. (2014) <i><a href="http://arxiv.org/pdf/1407.8399.pdf">A slice sampler for the hierarchical Poisson/gamma random field model, Proceedings for Perspectives on High Dimensional Data Analysis II, </a></i> Contemporary Mathematics, American Mathematical Society, to appear.</p></li>
+                        <li><p>Guo, Y. and Tang Li (2013). <i><a href="http://arxiv.org/pdf/1407.8399.pdf">A hierarchical probabilistic model for group independent component analysis in fMRI studies.</a></i> Biometrics. 69(4):970-81.</p></li>
+                        <li><p>Kang, J. Yang, Y. (2013) <i><a href="http://arxiv.org/pdf/1407.8399.pdf">Joint modeling of mixed count and continuous longitudinal data.</a></i> Analysis of Mixed Data. A.R. de Leon and K. Carriere Chough (Eds). Chapman &amp Hall/CRC, chapter 4.</p></li>
+                        <li><p>Yikai, W., Yueqi, Z. (2013). <i><a href="http://arxiv.org/pdf/1407.8399.pdf">Graph Construction Based on Re-weighted Sparse Representation for Semi-supervised Learning.</a></i> JICS. 10(2): 375- 383.</p></li>
+                    </ol>
+                </div>
+                <div class="tab-pane fade" id="b">
+                    <ol>
+                        <li><p>Bowman, F. D., Zhang, L., Derado, G., and Chen, S. (2012). <i><a href="http://arxiv.org/pdf/1407.8399.pdf">Determining Functional Connectivity using fMRI Data with Diffusion-Based Anatomical Weighting.</a></i> NeuroImage, 62: 1769-1779.</p></li>
+                        <li><p>Derado, G., Bowman, F. D., and Zhang, L. (2012). <i><a href="http://arxiv.org/pdf/1407.8399.pdf">Predicting Brain Activity using a Bayesian Spatial Model.</a></i> Statistical Methods in Medical Research (DOI: 10.1177/0962280212448972).</p></li>
+                        <li><p>Zhang, L., Agravat, S., Derado, G., Chen, S., McIntosh, B.J., and Bowman, F. D. (2012). <i><a href="http://arxiv.org/pdf/1407.8399.pdf">BSMac: A MATLAB toolbox Implementing a Bayesian Spatial Model for Brain Activation and Connectivity.</a></i> Journal of Neuroscience Methods . (DOI:10.1016/j.jneumeth.2011.10.025).</p></li>
+                        <li><p>Kang, J., Yang, Y. (2012). <i><a href="http://arxiv.org/pdf/1407.8399.pdf">Joint modeling of mixed count and continuous longitudinal data in Analysis of Mixed Data.</a></i> A.R. de Leon and K. Carriere Chough (Eds). Chapman &amp Hall/CRC, chapter 4, in press.</p></li>
+                        <li><p>Kang, J., Johnson, T. D., Nichols, T. E., Wager, T. D. (2012). <i><a href="">Local mixed-effects fitting for detecting reproductive hormone surge times. </a></i> Statistics in BioSciences, 4:245-261.</p></li>
+                        <li><p>Kang, J., Ye, W., Wang, L., Song, P. (2011). <i><a href="">Meta analysis of functional neuroimaging data via Bayesian spatial point processes. </a></i>Journal of the American Statistical Association, 106(493), 124-134. </p></li>
+                        <li><p>Chen, S. and Bowman, F. D. (2011). <i><a href="">A Novel Support Vector Classifier for Longitudinal High-dimensional Data and Its Application to Neuroimaging Data. </a></i>Statistical Analysis and Data Mining. 4(6):604-611.<b>[Winning paper for JSM 2011 Student Paper Competition, ASA Section on Statistical Learning and Data Mining].</b></p></li>
+                        <li><p>Guo Y (2011). <i><a href="">A general probabilistic for group independent component analysis and its estimation methods. </a></i>Biometrics. 67(4):1532-1542. </p></li>
+                        <li><p>Caffo, B., Bowman, F. D., Eberly, L., and Bassett, S. S. (2011). <i><a href="">A Markov Chain Monte Carlo Based Analysis of a Multilevel Model for Functional MRI Data, </a></i>Handbook of Markov Chain Monte Carlo: Methods and Applications, edited by Steve Brooks, Andrew Gelman, Galin Jones, and Xiao-Li Meng, Chapman &amp Hall. </p></li>
+                        <li><p>Kang, J., Johnson, T. D., Nichols, T. E., Wager, T. D. (2011). <i><a href="">Meta analysis of functional neuroimaging data via Bayesian spatial point processes. </a></i>Journal of the American Statistical Association, 106(493), 124-134. </p></li>
+                        <li><p>Derado, G., Bowman, F. D., Ely, T., and Kilts, C. (2010). <i><a href="">Evaluating Functional Autocorrelation within Spatially Distributed Neural Processing Clusters. </a></i>Statistics and Its Interface, 3:45-57. </p></li>
+                        <li><p>Guo Y (2010). <i><a href="">A weighted cluster kernel PCA prediction model for multi-subject brain imaging data. </a></i>Statistics And Its Interface. 3:103-111. </p></li>
+                        <li><p>Derado, G., Bowman, F. D., and Kilts, C. (2010). <i><a href="">Modeling the spatial and temporal dependence in fMRI data. </a></i> Biometrics, 66:949-957. </p></li>
+                        <li><p>Derado, G., Bowman, F. D., Ely, T., and Kilts, C. (2010). <i><a href="">Evaluating functional autocorrelation within spatially distributed neural processing clusters. </a></i>Statistics and Its Interface 3:45-47. </p></li>
+                    </ol>
+                </div>
+                <div class="tab-pane fade" id="c">
+                    <ol>
+                        <li><p>Guo, Y. and Pagnoni, G. (2008). <i><a href="">A unified framework for group independent component analysis for multi-subject fMRI data. </a></i>NeuroImage, 42: 1078-1093. </p></li>
+                        <li><p>Guo, Y. (2008). <i><a href="">Group Independent Component Analysis of Multi-subject fMRI data: Connections and Distinctions between Two Methods. </a></i>Conference proceeding of International Conference on BioMedical Engineering and Informatics 2008. Hainan, China. </p></li>
+                        <li><p>Guo, Y. and Bowman, F. D. (2008). <i><a href="">Modeling Dose-Dependent Neural Processing Responses Using Mixed Effects Spline Models. </a></i>NeuroImage 40.2 (2008): 698-711. </p></li>
+                        <li><p>Guo, Y., Bowman, F. D., and Kilts, C. D. (2008). <i><a href="">Predicting the Brain Response to Treatment using a Bayesian Hierarchical Model with Application to a Study of Schizophrenia. </a></i>Human Brain Mapping, 29(9): 1092-1109. </p></li>
+                        <li><p>Bowman, F. D., Caffo, B. A, Bassett, S., and Kilts, C. (2008). <i><a href="">Bayesian Hierarchical Framework for Spatial Modeling of fMRI Data. </a></i>NeuroImage 39: 146-156.(<b>Published version</b>: NeuroImage; <b>Preprint</b>: http://www.bepress.com/jhubiostat/paper139; <b>BSMAC Software</b>: See Links tab). </p></li>
+                        <li><p>Bowman, F. D., Guo, Y., and Derado, G. (2007).  <i><a href="">tatistical Approaches to Neuroimaging Data. </a></i>Neuroimaging Clinics of North America:  Imaging of the Mind 17(4): Nov. 2007, 441-458. </p></li>
+                        <li><p>Bowman, F. D. , Guo, Y., and Derado, G. (2007). <i><a href="">Statistical Approaches to Neuroimaging Data. </a></i>Neuroimaging Clinics of North America: Imaging of the Mind 17(4): Nov. 2007. </p></li>
+                        <li><p>Bowman, F. D. (2007). <i><a href="">Spatio-Temporal Models for Region of Interest Analyses of Functional Neuroimaging Data, </a></i>Journal of the American Statistical Association 102(478): 442-453. </p></li>
+                        <li><p>Arfanakis, K., Gui, M., Tamhane, A. A., and Carew, J. D. (2007). <i><a href="">Investigating the Medial Temporal Lobe in Alzheimer's Disease and Mild Cognitive Impairment, with Turboprop Diffusion Tensor Imaging, MRI-volumetry, and T2-Relaxometry. </a></i>Brain Imaging and Behavior, 1: 11-21. </p></li>
+                        <li><p>Carew, J. D. <i><a href="">dr-ROC Summary Meta-analysis Software Version 2.0 (2007). </a></i>Academic Radiology, 14(6): 767-768. </p></li>
+                        <li><p>Bley, T. A., Uhl, M., Carew, J., Markl, M., Schmidt, D., Hans-Hartmut, P., Langer, M., and Wieben, O. (2007). <i><a href="">Diagnostic value of high resolution MRI in giant cell arteritis. </a></i>American Journal of Neuroradiology, 28:1722-1727. </p></li>
+                    </ol>
+                </div>
+                <div class="tab-pane fade" id="d">
+                    <ol>
+                        <li><p>Patel, R., Bowman, F. D., and Rilling, J. K. (2006b). <i><a href="">Determining Hierarchical Functional Networks from Auditory Stimuli fMRI. </a></i>Human Brain Mapping 27:462-470. </p></li>
+                        <li><p>Patel, R., Van De Ville, D., and Bowman, F. D. (2006). <i><a href="">Determining Significant Connectivity by 4D Spatiotemporal Wavelet Packet Resampling of Functional Neuroimaging Data. </a></i>NeuroImage 31: 1142-1155. </p></li>
+                        <li><p>Patel, R., Bowman, F. D., and Rilling, J. K. (2006a). <i><a href="">A Bayesian Approach to Determining Connectivity of the Human Brain. </a></i>Human Brain Mapping 27: 267-276. </p></li>
+                        <li><p>Bowman, F. D. <i><a href="">Spatiotemporal Modeling of Localized Brain Activity (2005). </a></i>Biostatistics 6(4): 558-575. </p></li>
+                        <li><p>Bowman, F. D. and Patel, R. (2004) <i><a href="">Identifying Spatial Relationships in Neural Processing Using a Multiple Classification Approach. </a></i>NeuroImage 23: 260-268. </p></li>
+                        <li><p>Bowman, F. D., Patel, R., and Lu, C. (2004) <i><a href="">Methods for Detecting Functional Classifications in Neuroimaging Data. </a></i> Human Brain Mapping 23(2): 109-119. </p></li>
+                        <li><p>Bowman, F. D. and Kilts, C. (2003). <i><a href="">Modeling Intra-subject Correlation Among Repeated Scans in Positron Emission Tomography (PET) Neuroimaging Data. </a></i>Human Brain Mapping 20(2): 59-70. </p></li>
+                        <li><p>Patel, R. S., Bowman, F. D., Guo, Y., and Derado, G. (2006). <i><a href="">Integrating Support Vector Machines, Supervised Principal Components, and Boosting to Interpret Brain Activity. </a></i>Pittsburgh Brain Activity Interpretation Competition.  the Organization for Human Brain Mapping, 12<sup>th</sup> Annual Meeting, Florence, Italy. </p></li>
+                    </ol>
+                </div>
+            </div>
+		</div>
+		<div class="col-md-3">
+		<nav id="myScrollspy">
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="methodology.html">Methodology</a></li>
+                    <li><a href="applications.html">Applications</a></li>
+                    <li class="active"><a href="#Presentations">Presentations</a></li>
+                </ul>
+            </nav>	
+            </div>
+		</div>
+	</div>
+</div>
+
+<div class="footer_wrapper">
+	<div class="container">
+		<div class="footer">
+			<div class="footer_content">
+				<div class="col-sm-12">
+					<ul>
+						<li><a href="http://www.emory.edu" target="_blank">Emory University</a>|</li>
+						<li><a href="http://www.sph.emory.edu" target="_blank">The Rollins School of Public Health</a>|</li>
+						<li><a href="http://www.sph.emory.edu/bios/index.php" target="_blank">Department of Biostatistics</a>|</li>		
+						<li><a href="http://www.sph.emory.edu/bios/index.php" target="_blank">Terms & Conditions</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="col-sm-12 copyright text-center">
+				<p>Copyright © 2015 Center for Biomedical Imaging Statistics. All rights reserved.</p>
+				<h4>CBIS</h4>	
+			</div>
+		</div><!--footer-->	
+	</div>
+</div><!--footer_wrapper-->
+  <!--wrapper-->
+<script type="text/javascript">
+	$(document).ready(function() {/* var defaults = {containerID: 'toTop', // fading element id containerHoverID: 'toTopHover', // fading element hover id scrollSpeed: 1200, easingType: 'linear'}; */ 
+	$().UItoTop({ easingType: 'easeOutQuart' }); });
+	(function($){$.fn.UItoTop=function(options){var defaults={text:'To Top',min:200,inDelay:600,outDelay:400,containerID:'toTop',containerHoverID:'toTopHover',scrollSpeed:1000,easingType:'linear'},settings=$.extend(defaults,options),containerIDhash='#'+settings.containerID,containerHoverIDHash='#'+settings.containerHoverID;$('body').append('<a href="#" id="'+settings.containerID+'">'+settings.text+'</a>');$(containerIDhash).hide().on('click.UItoTop',function(){$('html, body').animate({scrollTop:0},settings.scrollSpeed,settings.easingType);$('#'+settings.containerHoverID,this).stop().animate({'opacity':0},settings.inDelay,settings.easingType);return false;}).prepend('<span id="'+settings.containerHoverID+'"></span>').hover(function(){$(containerHoverIDHash,this).stop().animate({'opacity':1},600,'linear');},function(){$(containerHoverIDHash,this).stop().animate({'opacity':0},700,'linear');});$(window).scroll(function(){var sd=$(window).scrollTop();if(typeof document.body.style.maxHeight==="undefined"){$(containerIDhash).css({'position':'absolute','top':sd+$(window).height()-50});}
+if(sd>settings.min)
+$(containerIDhash).fadeIn(settings.inDelay);else
+$(containerIDhash).fadeOut(settings.Outdelay);});};})(jQuery);
+</script>
+<script>
+</script>
+<a href="#" id="toTop" style="display: block;"> 
+<span id="toTopHover" style="opacity: 1;"></span></a>
+</body>
+</html>
