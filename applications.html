@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Center for Biomedical Imaging Statistics (CBIS)</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<link href="css/global.css" rel="stylesheet">
+	<link href="css/people.css" rel="stylesheet">
+	<script>
+            $(window).scroll(function(){
+                var ref_min = $("#myScrollspy")[0];
+                if(!ref_min)
+                    return;
+                if($(window).scrollTop() > $("#Applications").offset().top -120 ){
+                    $("#myScrollspy").addClass("isfixed");
+                    $("#myScrollspy").addClass("top-60");
+                }else{
+                    $("#myScrollspy").removeClass("isfixed");
+                    $("#myScrollspy").removeClass("top-60");
+                }
+            });
+            $(window).on("hashchange", function () {
+                    window.scrollTo(window.scrollX, window.scrollY - 100);
+            });
+    </script>
+</head>
+
+<body class="bs-docs" data-spy="scroll" data-target="#myScrollspy" data-offset="500">
+	<div class="bkg-white z-index-5 isfixed width-100">
+	    <header style="height: 102px; margin-bottom: 5px;">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-xs-12 hidden-xs">
+	                <a rel="home" href="index.html" style="display: inline-block; vertical-align: top; margin-top: 15px;">
+	                    <div id="dato-logo"></div>
+	                </a>
+	                <nav style="display: inline-block; margin-top: 56px">
+	                    <ul class="list-inline">
+	                        <li><a href="index.html">Home</a></li>
+	                        <li><a href="aboutus.html">Aboutus</a></li>
+	                        <li><a href="people.html">People</a>
+	                            <div class="dropdown">
+	                                <div class="space"></div>
+	                                <div class="arrow"></div>
+	                                <ul class="dropdown-menu" role="menu">
+	                                    <li><a role="menuitem" tabindex="-1" href="people.html#Core-Faculty">Core Faculty</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="people.html#Affiliated-Faculty">Affiliated Faculty</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="people.html#Members">Members</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="people.html#Alumni">Alumni</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="people.html#Collaborators">Collaborators</a></li>
+	                                </ul>
+	                            </div>
+	                        </li>
+	                        <li><a href="research.html">Research</a>
+	                            <div class="dropdown">
+	                                <div class="space"></div>
+	                                <div class="arrow"></div>
+	                                <ul class="dropdown-menu" role="menu">
+	                                    <li><a role="menuitem" tabindex="-1" href="SAEBC.html#">Research 1</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="research.html#">Research 2</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="research.html#">Research 3</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="research.html#">Research 4</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="research.html#">Research 5</a></li>
+	                                </ul>
+	                            </div>
+	                        </li>
+	                        <li><a href="methodology.html">Publications</a>
+	                            <div class="dropdown">
+	                                <div class="space"></div>
+	                                <div class="arrow"></div>
+	                                <ul class="dropdown-menu" role="menu">
+	                                    <li><a role="menuitem" tabindex="-1" href="methodology.html">Methodology</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="#">Applications</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="presentations.html">Presentations</a></li>
+	                                </ul>
+	                            </div>
+	                        </li>
+	                        <li><a href="grants.html">Grants</a></li>
+	                        <li><a href="downloads.html">Downloads</a>
+	                            <div class="dropdown">
+	                                <div class="space"></div>
+	                                <div class="arrow"></div>
+	                                <ul class="dropdown-menu" role="menu">
+	                                    <li><a role="menuitem" tabindex="-1" href="downloads.html#">Softwares</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="downloads.html#">Whatever</a></li>
+	                                </ul>
+	                            </div>
+	                        </li>
+	                    </ul>
+	                </nav>
+	                <div class="pull-right header-contact">
+	                    <div>
+	                        <a class="btn btn-primary" href="aboutus.html#ContactInfo">Contact Us</a>
+	                    </div>
+	                </div>
+	                </div>
+	            </div>
+	        </div>
+	    </header>
+    </div>
+
+<div class="empty" style="height: 107px"></div>
+
+<div class="header-main bkg-green rel">
+    <div class="grid-100 cell-first cell-last top-30 bottom-10 squares">
+        <div class="gutter-bottom center-div-980">
+            <h1 class="font-40 font-white normal">Publications</h1>
+            <h2 class="font-18 normal font-white">Intro in (12 - 15 words)...</h2>
+            <div class="gray-shadow gray-top">&nbsp;</div>
+            <div class="gray-shadow gray-bottom">&nbsp;</div>
+        </div>
+    </div>
+</div>
+
+<div class="container bs-docs-container bottom-60">
+	<div class="row">
+		<div class="col-md-9" role="main">
+			<div id="Applications" class="bs-docs-section">
+				<h1 class="page-header">
+			    APPLICATIONS
+				</h1>
+			</div>	
+            <ul id="myTab" class="nav nav-tabs">
+                <li class="active"><a href="#all" data-toggle="tab">ALL</a></li>
+                <li><a href="#a" data-toggle="tab">2013-2015</a></li>
+                <li><a href="#b" data-toggle="tab">2010-2012</a></li>
+                <li><a href="#c" data-toggle="tab">2007-2009</a></li>
+                <li><a href="#d" data-toggle="tab">before 2007</a></li>
+            </ul>
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade in active" id="all">
+                    <ol>
+                        <li><p>Cordova, J.S., Schreibmann, E., Hadjipanayis, C.G., Guo, Y., Shu, H., Shim, H., Holder, C. (2014). 
+                        <i><a href="">
+                                Quantitative tumor segmentation for evaluation of extent of glioblastoma resection to facilitate multisite clinical trials. 
+                        </a></i>
+                        Translational Oncology, 7(1):40-7.</p></li>
+                        <li><p>Shim, H., Wei, L., Holder, C., Guo, Y., Hu, X.P., Miller, A.H., Olson, J.J. (2014).
+                        <i><a href="">
+                                Use of high resolution volumetric MR spectroscopic imaging in assessing treatment response of GBM to an HDAC inhibitor.
+                        </a></i>
+                        American Journal of Roentgenology, (Accepted).</p></li>
+                        <li><p>Desal, N.K. Kang, J., Falgun, C. (2014).
+                        <i><a href="">
+                                Screening CT Angiography for Pediatric Blunt Cerebrovascular Injury with Emphasis on the Cervical "Seatbelt Sign".
+                        </a></i>
+                        American Journal of Neuroradiology, (Accepted).</p></li>
+                        <li><p>Datir, A. Xing M, Kang, J., Harkey P, Kakarala A, Carpenter WA, Terk MR. (2014).
+                        <i><a href="">
+                                Diagnostic Utility of MRI and MR Arthrography for Detection of Ligamentum Teres Tears: A Retrospective Analysis of 187 Patients with Hip Pain.
+                        </a></i>
+                        American Journal of Roentgenology, (Accepted).
+                        </p></li>
+                        <li><p>Dehkharghani S., Kang J., Saindane, A. (2013).
+                        <i><a href="">
+                                Improved quality and diagnostic confidence achieved by use of dose-reduced gadolinium blood pool agents for time-resolved intracranial MR angiography.
+                        </a></i>
+                        American Journal of Neuroradiology, 202(5):1108-13.
+                        </p></li>
+                        <li><p>Shuaib, W., Johnson, J.-O., Pande,V., Salestekar, N., Kang, J., He, Q., Khosa, F. (2013).
+                        <i><a href="">
+                                Ventriculoperitoneal Shunt Malfunction: cost, radiation, and turnaround time analysis.
+                        </a></i>
+                        American Journal of Roentgenology, 202(1):13-7. 
+                        </p></li>
+                        <li><p>Yan, X., Kang, J., Zhou, Y., Ehsan, R., Halkar, R., Applegate, K. Schuster, D.M. (2013). 
+                        <i><a href="">
+                                Comparison of Imaging Quality of Inpatient and Outpatient 18F-FDG PET/CT. 
+                        </a></i>
+                        Annals of Nuclear Medicine, 27(6):508-14.
+                        </p></li>
+                        <li><p>Russell, S., Fowler, L., Applegate, K., Kang, J. (2013).
+                        <i><a href="">
+                                Speech-Language Pathologists' Radiation Knowledge and Practices During Completion of the Modified Barium Swallow Study: A Survey.
+                        </a></i>
+                        Journal of Medical Speech-Language Pathology, (in press).
+                        </p></li>
+                        <li><p>Moreno, C., Pinho, D., Nelson, R. Sahani, D. Jenkins, M. Zabrycki, M. Chaudry, H. Kang, J., Chen, Z. (2013). 
+                        <i><a href="">
+                                Lessons learned from 118,970 multidetector CT (MDCT) Intravenous contrast material administrations: impact of Catheter Dwell time and Gauge, Gather location, Rate of contrast material administration, and patient age and gender on volume of extravasate.
+                        </a></i>
+                        Journal of Computer Assisted Tomography, 37(2):286-8.
+                        </p></li>
+                        <li><p>Saindane, A.M., Mitchell, B.C., Kang, J., Desal, N.K. (2013). 
+                        <i><a href="">
+                                Performance of Spin-Echo and Gradient-Echo Based T1-weighted Sequences for Evaluation of Dural Venous Sinus Thrombosis and Stenosis.
+                        </a></i>
+                        American Journal of Roentgenology, 201(1):162-9.
+                        </p></li>
+                        <li><p>Kalb, B., Martin, D.R., Sarmiento, J.M., Erickson, S.H., Gober, D., Tapper, E.B., Chen, Z., Adsay, N.V. (2013). 
+                        <i><a href="">
+                                Paraduodenal Pancreatitis: Clinical Performance of MR Imaging in Distinguishing from Carcinoma.
+                        </a></i>
+                        Radiology, 269(2):475-81.
+                        </p></li>
+                        <li><p>Amzat, R., Taleghani, P., Miller, D.L., Beitler, J.J., Bellamy, L.M., Nye, J.A., Yu, W., Savir-Baruch, B., Osunkoya, A.O., Chen, Z., Auffermann, W.F., Goodman, M.M., Schuster, D.M. (2013). 
+                        <i><a href="">
+                                Pilot Study of the Utility of the Synthetic PET Amino-Acid Radiotracer Anti-1-Amino-3-[18F]Fluorocyclobutane-1-Carboxylic Acid for the Noninvasive Imaging of Pulmonary Lesions.
+                        </a></i>
+                        Molecular Imaging and Biology, 15(5):633-43.
+                        </p></li>
+                        <li><p>Moreno, C.C., Pinho, D., Nelson, R.C., Sahani, D.V., Jenkins, M., Zabrycki, M., Chaudhry, H., Kang, J., Chen, Z. (2013). 
+                        <i><a href="">
+                                Lessons learned from 118,970 multidetector computed tomographic intravenous contrast material administrations: impact of catheter dwell time and gauge, catheter location, rate of contrast material administration, and patient age and sex on volume of extravasate.
+                        </a></i>
+                        Journal of Computer Assisted Tomography, 37(2):286-8.
+                        </p></li>
+                        <li><p>Schuster, D.M., Taleghani, P.A., Nieh, P.T., Master, V.A., Amzat, R., Savir-Baruch, B., Halkar, R.K., Fox, T., Osunkoya, A.O., Moreno, C.S., Nye, J.A., Yu, W., Fei, B., Wang, Z., Chen, Z., Goodman, M.M. (2013). 
+                        <i><a href="">
+                                Characterization of primary prostate carcinoma by anti-1-amino-2-[(18)F] -fluorocyclobutane-1-carboxylic acid (anti-3-[(18)F] FACBC) uptake.
+                        </a></i>
+                        American Journal of Nuclear Medicine Molecular Imaging, 3(1):85-96.
+                        </p></li>
+                        <li><p>Stapleford, L., Landry, J., Schreibmann, E., Waller, A., Pan, L., Kim, S., Chen, Z., Crocker, I., Fox, T. (2012). 
+                        <i><a href="">
+                                Quantitative Analysis of Pre- and Post-treatment PET-CT Scans using Deformable Image Registration Methods.
+                        </a></i>
+                        Journal of Radiosurgery and SBRT, 2(1):51-62. 
+                        </p></li>
+                        <li><p>Kalb, B., Sharma, P., Tigges, S., Ray, G.L., Kitajima, H.D., Costello, J.R., Chen, Z., Martin, D.R. (2012). 
+                        <i><a href="">
+                                MR Imaging of Pulmonary Embolism: Diagnostic Accuracy of Contrast-enhanced 3D MR Pulmonary Angiography, Contrast-enhanced Low-Flip Angle 3D GRE, and Nonenhanced Free-Induction FISP Sequences. 
+                        </a></i>
+                        Radiology, 263(1):271-278.
+                        </p></li>
+                        <li><p>Kang, J., Ye, W., Wang, L., Veiga-Lopez, A., Padmanabhan,V., Song, P. (2012). 
+                        <i><a href="">
+                                Local mixed-effects fitting for detecting reproductive hormone surge times.
+                        </a></i>
+                        Statistics in BioSciences, 4(2):245-261.
+                        </p></li>
+                        <li><p>Taylor, S. F., Kang, J., Brege, I. S., Tso, I. F., Hosanagar, A., Johnson, T. D. (2012). 
+                        <i><a href="">
+                                Reply to: Neurobiology of Emotional Dysfunction in Schizophrenia: New Directions Revealed Through Meta-Analyses. 
+                        </a></i>
+                        Biological Psychiatry, 71(6):25.
+                        </p></li>
+                        <li><p>Taylor, S. F., Kang, J., Brege, I. S., Tso, I. F., Hosanagar, A., Johnson, T. D. (2012). 
+                        <i><a href="">
+                                Meta-analysis of functional neuroimaging studies of emotion perception and experience schizophrenia.
+                        </a></i>
+                        Biological Psychiatry, 71(2):136-45.
+                        </p></li>
+                        <li><p>Kennedy, A. P., Binder, E. B., Bowman, F. D., Harenski, K., Ely, T., VanNess, S., Kilts, C. D. (2012). 
+                        <i><a href="">
+                                A common TPH2 haplotype regulates the neural processing of a cognitive control demand.
+                        </a></i>
+                        American Journal of Medical Genetics, Part B: Neuropsychiatric Genetics. 159B(7), 829-840. (doi: 10.1002/ajmg.b.32090).
+                        </p></li>
+                        <li><p>Schuster D. M., Savir-Baruch B., Nieh P. T., Master V. A., Halkar R. K., Rossi P. J., Lewis M. M., Nye J. A., Yu W., Bowman F. D., Goodman M. M. (2011).  
+                        <i><a href="">
+                                Recurrent prostate carcinoma detection with anti-1-amino-3 [<sup>18</sup>F]fluorocyclobutane-1-carboxylic acid (anti-3-[<sup>18</sup>F]FACBC) PET-CT and <sup>111</sup>Indium-capromab-pendetide (ProstaScint) SPECT-CT.
+                        </a></i>
+                        Radiology, 259(3): 852-861.
+                        </p></li>
+                        <li><p>Becker-Weidman, D.J., Kalb, B., Sharma, P., Kitajima, H.D., Lurie, C.R., Chen, Z., Spivey, J.R., Knechtle, S.J., Hanish, S.I., Adsay, N.V., Farris, A.B. 3rd, Martin, D.R. (2011). 
+                        <i><a href="">
+                                Hepatocellular Carcinoma Lesion Characterization: Single-Institution Clinical Performance Review of Multiphase Gadolinium-enhanced MR Imaging--Comparison to Prior Same-Center Results after MR Systems Improvements.
+                        </a></i>
+                        Radiology, 261(3):824-33. 
+                        </p></li>
+                        <li><p>Janik, M., Hartlage, G., Alexopoulos, N., Mirzoyev, Z., McLean, D.S., Arepalli, C.D., Chen, Z., Stillman, A.E., Raggi, P. (2010). 
+                        <i><a href="">
+                                Epicardial adipose tissue volume and coronary artery calcium to predict myocardial ischemia on positron emission tomography-computed tomography studies.
+                        </a></i>
+                        Journal of Nuclear Cardiology, 17(5):841-7.
+                        </p></li>
+                        <li><p>Derado, G., Lee, K., Nicolis, O., Bowman, F. D., Newell, M., Rugger, F. F., and Vidakovic, B. (2008). 
+                        <i><a href="">
+                                Wavelet-based 3-D Multifractal Spectrum with Applications in Breast MRI Images. Bioinformatics Research and Applications.
+                        </a></i>
+                        Lecture Notes in Bioinformatics, Springer-Verlag, volume 4983, 281-292.
+                        </p></li>
+                        <li><p>Schuster, D. M., Halkar, R. K., Esteves, F., Garcia, E., Cooke, C. D., Syed, M., Bowman, F. D., Votaw, J. R. (2008). 
+                        <i><a href="">
+                                Investigation of Emission-Transmission Misalignment Artifacts on Rb-82 Cardiac PET with Adenosine Pharmacologic Stress.
+                        </a></i>
+                        Molecular Imaging and Biology, 10:201-208.
+                        </p></li>
+                        <li><p>Robertson, D., Snarey, J., Ousley, O., Harenski, K., Bowman, F. D., Gilkey, R., Kilts, C. (2007). 
+                        <i><a href="">
+                                The neural basis of moral sensitivity to issues of justice and care: an fMRI study.
+                        </a></i>
+                        Neuropsychologia 45(4): 755-766.
+                        </p></li>
+                        <li><p>Derado, G., Bowman, F. D., Patel, R., Newell, M., and Vidakovic, B. (2007).  
+                        <i><a href="">
+                                Wavelet Image Interpolation (WII): A Wavelet-based Approach to the Enhancement of Digital Mammography Images. Mandoiu and A. Zalikovsky (Eds.)
+                        </a></i>
+                        Springer-Verlag Lecture Notes in Bioinformatics volume 4463: 203-214.
+                        </p></li>
+                        <li><p>Schuster D. M., Votaw J., Nieh P. T., Yu W., Nye J. A., Master V., Bowman F. D. , Issa M. M., Goodman M. M. (2007). 
+                        <i><a href="">
+                                Initial experience with the radiotracer anti 1-amino-3-[<sup>18</sup>F]fluorocyclobutane-1-carboxylic acid (anti-[<sup>18</sup>F]FACBC) with PET/CT in prostate carcinoma.
+                        </a></i>
+                        The Journal of Nuclear Medicine 48: 56-63.
+                        </p></li>
+                        <li><p>Kilts, C. D., Kelsey, J. E., Knight, B., Ely, T. D., Bowman, F. D., Gross, R. E., Selvig, A., Gordon, A., Newport, D. J., Nemeroff, C. B. (2006). 
+                        <i><a href="">
+                                The Neural Correlates of Social Anxiety Disorder and Response to Pharmacotherapy. 
+                        </a></i>
+                        Neuropsychopharmacology 31: 2243-2253.
+                        </p></li>
+                        <li><p>Bowman, F. D. and Waller, L. A. (2004). 
+                        <i><a href="">
+                                Modeling of Cardiac Imaging Data with Spatial Correlation.
+                        </a></i>
+                        Statistics in Medicine 23(6): 965-985.
+                        </p></li>
+                        <li><p>Votaw, J., Byas-Smith, M., Hua, J., Voll, R., Martarello, L., Levey, A. I., Bowman, F. D., Goodman, M.  (2003). 
+                        <i><a href="">
+                                Interaction of Isoflurane with the Dopamine Transporter.
+                        </a></i>
+                        Anesthesiology 98: 404-411.
+                        </p></li>
+                        <li><p>Belkasim, S., Derado, G., Aznita, R., Gilbert, E., and , Aznita, R., Gilbert, E., and O'Connell, H. 
+                        <i><a href="">
+                                Multi-resolution border segmentation for measuring spatial heterogeneity of mixed population biofilm bacteria.
+                        </a></i>
+                        Computerized Medical Imaging and Graphics (submitted).
+                        </p></li>
+                        <li><p> <i><a href=""> </a></i> </p></li>
+                    </ol>
+                </div>
+                <div class="tab-pane fade" id="a">
+                    <ol>
+                        <li><p>Cordova, J.S., Schreibmann, E., Hadjipanayis, C.G., Guo, Y., Shu, H., Shim, H., Holder, C. (2014). 
+                        <i><a href="">
+                                Quantitative tumor segmentation for evaluation of extent of glioblastoma resection to facilitate multisite clinical trials. 
+                        </a></i>
+                        Translational Oncology, 7(1):40-7.</p></li>
+                        <li><p>Shim, H., Wei, L., Holder, C., Guo, Y., Hu, X.P., Miller, A.H., Olson, J.J. (2014).
+                        <i><a href="">
+                                Use of high resolution volumetric MR spectroscopic imaging in assessing treatment response of GBM to an HDAC inhibitor.
+                        </a></i>
+                        American Journal of Roentgenology, (Accepted).</p></li>
+                        <li><p>Desal, N.K. Kang, J., Falgun, C. (2014).
+                        <i><a href="">
+                                Screening CT Angiography for Pediatric Blunt Cerebrovascular Injury with Emphasis on the Cervical "Seatbelt Sign".
+                        </a></i>
+                        American Journal of Neuroradiology, (Accepted).</p></li>
+                        <li><p>Datir, A. Xing M, Kang, J., Harkey P, Kakarala A, Carpenter WA, Terk MR. (2014).
+                        <i><a href="">
+                                Diagnostic Utility of MRI and MR Arthrography for Detection of Ligamentum Teres Tears: A Retrospective Analysis of 187 Patients with Hip Pain.
+                        </a></i>
+                        American Journal of Roentgenology, (Accepted).
+                        </p></li>
+                        <li><p>Dehkharghani S., Kang J., Saindane, A. (2013).
+                        <i><a href="">
+                                Improved quality and diagnostic confidence achieved by use of dose-reduced gadolinium blood pool agents for time-resolved intracranial MR angiography.
+                        </a></i>
+                        American Journal of Neuroradiology, 202(5):1108-13.
+                        </p></li>
+                        <li><p>Shuaib, W., Johnson, J.-O., Pande,V., Salestekar, N., Kang, J., He, Q., Khosa, F. (2013).
+                        <i><a href="">
+                                Ventriculoperitoneal Shunt Malfunction: cost, radiation, and turnaround time analysis.
+                        </a></i>
+                        American Journal of Roentgenology, 202(1):13-7. 
+                        </p></li>
+                        <li><p>Yan, X., Kang, J., Zhou, Y., Ehsan, R., Halkar, R., Applegate, K. Schuster, D.M. (2013). 
+                        <i><a href="">
+                                Comparison of Imaging Quality of Inpatient and Outpatient 18F-FDG PET/CT. 
+                        </a></i>
+                        Annals of Nuclear Medicine, 27(6):508-14.
+                        </p></li>
+                        <li><p>Russell, S., Fowler, L., Applegate, K., Kang, J. (2013).
+                        <i><a href="">
+                                Speech-Language Pathologists' Radiation Knowledge and Practices During Completion of the Modified Barium Swallow Study: A Survey.
+                        </a></i>
+                        Journal of Medical Speech-Language Pathology, (in press).
+                        </p></li>
+                        <li><p>Moreno, C., Pinho, D., Nelson, R. Sahani, D. Jenkins, M. Zabrycki, M. Chaudry, H. Kang, J., Chen, Z. (2013). 
+                        <i><a href="">
+                                Lessons learned from 118,970 multidetector CT (MDCT) Intravenous contrast material administrations: impact of Catheter Dwell time and Gauge, Gather location, Rate of contrast material administration, and patient age and gender on volume of extravasate.
+                        </a></i>
+                        Journal of Computer Assisted Tomography, 37(2):286-8.
+                        </p></li>
+                        <li><p>Saindane, A.M., Mitchell, B.C., Kang, J., Desal, N.K. (2013). 
+                        <i><a href="">
+                                Performance of Spin-Echo and Gradient-Echo Based T1-weighted Sequences for Evaluation of Dural Venous Sinus Thrombosis and Stenosis.
+                        </a></i>
+                        American Journal of Roentgenology, 201(1):162-9.
+                        </p></li>
+                        <li><p>Kalb, B., Martin, D.R., Sarmiento, J.M., Erickson, S.H., Gober, D., Tapper, E.B., Chen, Z., Adsay, N.V. (2013). 
+                        <i><a href="">
+                                Paraduodenal Pancreatitis: Clinical Performance of MR Imaging in Distinguishing from Carcinoma.
+                        </a></i>
+                        Radiology, 269(2):475-81.
+                        </p></li>
+                        <li><p>Amzat, R., Taleghani, P., Miller, D.L., Beitler, J.J., Bellamy, L.M., Nye, J.A., Yu, W., Savir-Baruch, B., Osunkoya, A.O., Chen, Z., Auffermann, W.F., Goodman, M.M., Schuster, D.M. (2013). 
+                        <i><a href="">
+                                Pilot Study of the Utility of the Synthetic PET Amino-Acid Radiotracer Anti-1-Amino-3-[18F]Fluorocyclobutane-1-Carboxylic Acid for the Noninvasive Imaging of Pulmonary Lesions.
+                        </a></i>
+                        Molecular Imaging and Biology, 15(5):633-43.
+                        </p></li>
+                        <li><p>Moreno, C.C., Pinho, D., Nelson, R.C., Sahani, D.V., Jenkins, M., Zabrycki, M., Chaudhry, H., Kang, J., Chen, Z. (2013). 
+                        <i><a href="">
+                                Lessons learned from 118,970 multidetector computed tomographic intravenous contrast material administrations: impact of catheter dwell time and gauge, catheter location, rate of contrast material administration, and patient age and sex on volume of extravasate.
+                        </a></i>
+                        Journal of Computer Assisted Tomography, 37(2):286-8.
+                        </p></li>
+                        <li><p>Schuster, D.M., Taleghani, P.A., Nieh, P.T., Master, V.A., Amzat, R., Savir-Baruch, B., Halkar, R.K., Fox, T., Osunkoya, A.O., Moreno, C.S., Nye, J.A., Yu, W., Fei, B., Wang, Z., Chen, Z., Goodman, M.M. (2013). 
+                        <i><a href="">
+                                Characterization of primary prostate carcinoma by anti-1-amino-2-[(18)F] -fluorocyclobutane-1-carboxylic acid (anti-3-[(18)F] FACBC) uptake.
+                        </a></i>
+                        American Journal of Nuclear Medicine Molecular Imaging, 3(1):85-96.
+                        </p></li>
+                        <li><p> <i><a href=""> </a></i> </p></li>
+                    </ol>
+                </div>
+                <div class="tab-pane fade" id="b">
+                    <ol>
+                        <li><p>Stapleford, L., Landry, J., Schreibmann, E., Waller, A., Pan, L., Kim, S., Chen, Z., Crocker, I., Fox, T. (2012). 
+                        <i><a href="">
+                                Quantitative Analysis of Pre- and Post-treatment PET-CT Scans using Deformable Image Registration Methods.
+                        </a></i>
+                        Journal of Radiosurgery and SBRT, 2(1):51-62. 
+                        </p></li>
+                        <li><p>Kalb, B., Sharma, P., Tigges, S., Ray, G.L., Kitajima, H.D., Costello, J.R., Chen, Z., Martin, D.R. (2012). 
+                        <i><a href="">
+                                MR Imaging of Pulmonary Embolism: Diagnostic Accuracy of Contrast-enhanced 3D MR Pulmonary Angiography, Contrast-enhanced Low-Flip Angle 3D GRE, and Nonenhanced Free-Induction FISP Sequences. 
+                        </a></i>
+                        Radiology, 263(1):271-278.
+                        </p></li>
+                        <li><p>Kang, J., Ye, W., Wang, L., Veiga-Lopez, A., Padmanabhan,V., Song, P. (2012). 
+                        <i><a href="">
+                                Local mixed-effects fitting for detecting reproductive hormone surge times.
+                        </a></i>
+                        Statistics in BioSciences, 4(2):245-261.
+                        </p></li>
+                        <li><p>Taylor, S. F., Kang, J., Brege, I. S., Tso, I. F., Hosanagar, A., Johnson, T. D. (2012). 
+                        <i><a href="">
+                                Reply to: Neurobiology of Emotional Dysfunction in Schizophrenia: New Directions Revealed Through Meta-Analyses. 
+                        </a></i>
+                        Biological Psychiatry, 71(6):25.
+                        </p></li>
+                        <li><p>Taylor, S. F., Kang, J., Brege, I. S., Tso, I. F., Hosanagar, A., Johnson, T. D. (2012). 
+                        <i><a href="">
+                                Meta-analysis of functional neuroimaging studies of emotion perception and experience schizophrenia.
+                        </a></i>
+                        Biological Psychiatry, 71(2):136-45.
+                        </p></li>
+                        <li><p>Kennedy, A. P., Binder, E. B., Bowman, F. D., Harenski, K., Ely, T., VanNess, S., Kilts, C. D. (2012). 
+                        <i><a href="">
+                                A common TPH2 haplotype regulates the neural processing of a cognitive control demand.
+                        </a></i>
+                        American Journal of Medical Genetics, Part B: Neuropsychiatric Genetics. 159B(7), 829-840. (doi: 10.1002/ajmg.b.32090).
+                        </p></li>
+                        <li><p>Schuster D. M., Savir-Baruch B., Nieh P. T., Master V. A., Halkar R. K., Rossi P. J., Lewis M. M., Nye J. A., Yu W., Bowman F. D., Goodman M. M. (2011).  
+                        <i><a href="">
+                                Recurrent prostate carcinoma detection with anti-1-amino-3 [<sup>18</sup>F]fluorocyclobutane-1-carboxylic acid (anti-3-[<sup>18</sup>F]FACBC) PET-CT and <sup>111</sup>Indium-capromab-pendetide (ProstaScint) SPECT-CT.
+                        </a></i>
+                        Radiology, 259(3): 852-861.
+                        </p></li>
+                        <li><p>Becker-Weidman, D.J., Kalb, B., Sharma, P., Kitajima, H.D., Lurie, C.R., Chen, Z., Spivey, J.R., Knechtle, S.J., Hanish, S.I., Adsay, N.V., Farris, A.B. 3rd, Martin, D.R. (2011). 
+                        <i><a href="">
+                                Hepatocellular Carcinoma Lesion Characterization: Single-Institution Clinical Performance Review of Multiphase Gadolinium-enhanced MR Imaging--Comparison to Prior Same-Center Results after MR Systems Improvements.
+                        </a></i>
+                        Radiology, 261(3):824-33. 
+                        </p></li>
+                        <li><p>Janik, M., Hartlage, G., Alexopoulos, N., Mirzoyev, Z., McLean, D.S., Arepalli, C.D., Chen, Z., Stillman, A.E., Raggi, P. (2010). 
+                        <i><a href="">
+                                Epicardial adipose tissue volume and coronary artery calcium to predict myocardial ischemia on positron emission tomography-computed tomography studies.
+                        </a></i>
+                        Journal of Nuclear Cardiology, 17(5):841-7.
+                        </p></li>
+                                                <li><p> <i><a href=""> </a></i> </p></li>
+                    </ol>
+                </div>
+                <div class="tab-pane fade" id="c">
+                    <ol>
+                        <li><p>Derado, G., Lee, K., Nicolis, O., Bowman, F. D., Newell, M., Rugger, F. F., and Vidakovic, B. (2008). 
+                        <i><a href="">
+                                Wavelet-based 3-D Multifractal Spectrum with Applications in Breast MRI Images. Bioinformatics Research and Applications.
+                        </a></i>
+                        Lecture Notes in Bioinformatics, Springer-Verlag, volume 4983, 281-292.
+                        </p></li>
+                        <li><p>Schuster, D. M., Halkar, R. K., Esteves, F., Garcia, E., Cooke, C. D., Syed, M., Bowman, F. D., Votaw, J. R. (2008). 
+                        <i><a href="">
+                                Investigation of Emission-Transmission Misalignment Artifacts on Rb-82 Cardiac PET with Adenosine Pharmacologic Stress.
+                        </a></i>
+                        Molecular Imaging and Biology, 10:201-208.
+                        </p></li>
+                        <li><p>Robertson, D., Snarey, J., Ousley, O., Harenski, K., Bowman, F. D., Gilkey, R., Kilts, C. (2007). 
+                        <i><a href="">
+                                The neural basis of moral sensitivity to issues of justice and care: an fMRI study.
+                        </a></i>
+                        Neuropsychologia 45(4): 755-766.
+                        </p></li>
+                        <li><p>Derado, G., Bowman, F. D., Patel, R., Newell, M., and Vidakovic, B. (2007).  
+                        <i><a href="">
+                                Wavelet Image Interpolation (WII): A Wavelet-based Approach to the Enhancement of Digital Mammography Images. Mandoiu and A. Zalikovsky (Eds.)
+                        </a></i>
+                        Springer-Verlag Lecture Notes in Bioinformatics volume 4463: 203-214.
+                        </p></li>
+                        <li><p>Schuster D. M., Votaw J., Nieh P. T., Yu W., Nye J. A., Master V., Bowman F. D. , Issa M. M., Goodman M. M. (2007). 
+                        <i><a href="">
+                                Initial experience with the radiotracer anti 1-amino-3-[<sup>18</sup>F]fluorocyclobutane-1-carboxylic acid (anti-[<sup>18</sup>F]FACBC) with PET/CT in prostate carcinoma.
+                        </a></i>
+                        The Journal of Nuclear Medicine 48: 56-63.
+                        </p></li>
+                        <li><p> <i><a href=""> </a></i> </p></li>
+                    </ol>
+                </div>
+                <div class="tab-pane fade" id="d">
+                    <ol>
+                        <li><p>Kilts, C. D., Kelsey, J. E., Knight, B., Ely, T. D., Bowman, F. D., Gross, R. E., Selvig, A., Gordon, A., Newport, D. J., Nemeroff, C. B. (2006). 
+                        <i><a href="">
+                                The Neural Correlates of Social Anxiety Disorder and Response to Pharmacotherapy. 
+                        </a></i>
+                        Neuropsychopharmacology 31: 2243-2253.
+                        </p></li>
+                        <li><p>Bowman, F. D. and Waller, L. A. (2004). 
+                        <i><a href="">
+                                Modeling of Cardiac Imaging Data with Spatial Correlation.
+                        </a></i>
+                        Statistics in Medicine 23(6): 965-985.
+                        </p></li>
+                        <li><p>Votaw, J., Byas-Smith, M., Hua, J., Voll, R., Martarello, L., Levey, A. I., Bowman, F. D., Goodman, M.  (2003). 
+                        <i><a href="">
+                                Interaction of Isoflurane with the Dopamine Transporter.
+                        </a></i>
+                        Anesthesiology 98: 404-411.
+                        </p></li>
+                        <li><p>Belkasim, S., Derado, G., Aznita, R., Gilbert, E., and , Aznita, R., Gilbert, E., and O'Connell, H. 
+                        <i><a href="">
+                                Multi-resolution border segmentation for measuring spatial heterogeneity of mixed population biofilm bacteria.
+                        </a></i>
+                        Computerized Medical Imaging and Graphics (submitted).
+                        </p></li>
+                        <li><p> <i><a href=""> </a></i> </p></li>
+                    </ol>
+                </div>
+            </div>
+		</div>
+		<div class="col-md-3">
+		<nav id="myScrollspy">
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="methodology.html">Methodology</a></li>
+                    <li class="active"><a href="">Applications</a></li>
+                    <li><a href="presentations.html">Presentations</a></li>
+                </ul>
+            </nav>	
+            </div>
+		</div>
+	</div>
+</div>
+
+<div class="footer_wrapper">
+	<div class="container">
+		<div class="footer">
+			<div class="footer_content">
+				<div class="col-sm-12">
+					<ul>
+						<li><a href="http://www.emory.edu" target="_blank">Emory University</a>|</li>
+						<li><a href="http://www.sph.emory.edu" target="_blank">The Rollins School of Public Health</a>|</li>
+						<li><a href="http://www.sph.emory.edu/bios/index.php" target="_blank">Department of Biostatistics</a>|</li>		
+						<li><a href="http://www.sph.emory.edu/bios/index.php" target="_blank">Terms & Conditions</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="col-sm-12 copyright text-center">
+				<p>Copyright © 2015 Center for Biomedical Imaging Statistics. All rights reserved.</p>
+				<h4>CBIS</h4>	
+			</div>
+		</div><!--footer-->	
+	</div>
+</div><!--footer_wrapper-->
+  <!--wrapper-->
+<script type="text/javascript">
+	$(document).ready(function() {/* var defaults = {containerID: 'toTop', // fading element id containerHoverID: 'toTopHover', // fading element hover id scrollSpeed: 1200, easingType: 'linear'}; */ 
+	$().UItoTop({ easingType: 'easeOutQuart' }); });
+	(function($){$.fn.UItoTop=function(options){var defaults={text:'To Top',min:200,inDelay:600,outDelay:400,containerID:'toTop',containerHoverID:'toTopHover',scrollSpeed:1000,easingType:'linear'},settings=$.extend(defaults,options),containerIDhash='#'+settings.containerID,containerHoverIDHash='#'+settings.containerHoverID;$('body').append('<a href="#" id="'+settings.containerID+'">'+settings.text+'</a>');$(containerIDhash).hide().on('click.UItoTop',function(){$('html, body').animate({scrollTop:0},settings.scrollSpeed,settings.easingType);$('#'+settings.containerHoverID,this).stop().animate({'opacity':0},settings.inDelay,settings.easingType);return false;}).prepend('<span id="'+settings.containerHoverID+'"></span>').hover(function(){$(containerHoverIDHash,this).stop().animate({'opacity':1},600,'linear');},function(){$(containerHoverIDHash,this).stop().animate({'opacity':0},700,'linear');});$(window).scroll(function(){var sd=$(window).scrollTop();if(typeof document.body.style.maxHeight==="undefined"){$(containerIDhash).css({'position':'absolute','top':sd+$(window).height()-50});}
+if(sd>settings.min)
+$(containerIDhash).fadeIn(settings.inDelay);else
+$(containerIDhash).fadeOut(settings.Outdelay);});};})(jQuery);
+</script>
+<script>
+</script>
+<a href="#" id="toTop" style="display: block;"> 
+<span id="toTopHover" style="opacity: 1;"></span></a>
+</body>
+</html>

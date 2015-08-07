@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Center for Biomedical Imaging Statistics (CBIS)</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<link href="css/global.css" rel="stylesheet">
+	<link href="css/people.css" rel="stylesheet">
+	<script>
+            $(window).scroll(function(){
+                var ref_min = $("#myScrollspy")[0];
+                if(!ref_min)
+                    return;
+                if($(window).scrollTop() > $("#Introduction").offset().top -120 ){
+                    $("#myScrollspy").addClass("isfixed");
+                    $("#myScrollspy").addClass("top-60");
+                }else{
+                    $("#myScrollspy").removeClass("isfixed");
+                    $("#myScrollspy").removeClass("top-60");
+                }
+            });
+            $(window).on("hashchange", function () {
+                    window.scrollTo(window.scrollX, window.scrollY - 100);
+            });
+    </script>
+</head>
+
+<body class="bs-docs" data-spy="scroll" data-target="#myScrollspy" data-offset="500">
+	<div class="bkg-white z-index-5 isfixed width-100">
+	    <header style="height: 102px; margin-bottom: 5px;">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-xs-12 hidden-xs">
+	                <a rel="home" href="index.html" style="display: inline-block; vertical-align: top; margin-top: 15px;">
+	                    <div id="dato-logo"></div>
+	                </a>
+	                <nav style="display: inline-block; margin-top: 56px">
+	                    <ul class="list-inline">
+	                        <li><a href="index.html">Home</a></li>
+	                        <li><a href="aboutus.html">Aboutus</a></li>
+	                        <li><a href="people.html">People</a>
+	                            <div class="dropdown">
+	                                <div class="space"></div>
+	                                <div class="arrow"></div>
+	                                <ul class="dropdown-menu" role="menu">
+	                                    <li><a role="menuitem" tabindex="-1" href="people.html#Core-Faculty">Core Faculty</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="people.html#Affiliated-Faculty">Affiliated Faculty</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="people.html#Members">Members</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="people.html#Alumni">Alumni</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="people.html#Collaborators">Collaborators</a></li>
+	                                </ul>
+	                            </div>
+	                        </li>
+	                        <li><a href="research.html">Research</a>
+	                            <div class="dropdown">
+	                                <div class="space"></div>
+	                                <div class="arrow"></div>
+	                                <ul class="dropdown-menu" role="menu">
+	                                    <li><a role="menuitem" tabindex="-1" href="SAEBC.html">Research 1</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="research.html#">Research 2</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="research.html#">Research 3</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="research.html#">Research 4</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="research.html#">Research 5</a></li>
+	                                </ul>
+	                            </div>
+	                        </li>
+	                        <li><a href="methodology.html">Publications</a>
+	                            <div class="dropdown">
+	                                <div class="space"></div>
+	                                <div class="arrow"></div>
+	                                <ul class="dropdown-menu" role="menu">
+	                                    <li><a role="menuitem" tabindex="-1" href="methodology.html#">Methodology</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="applications.html#">Applications</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="presentations.html#">Presentations</a></li>
+	                                </ul>
+	                            </div>
+	                        </li>
+	                        <li><a href="#">Grants</a></li>
+	                        <li><a href="downloads.html">Downloads</a>
+	                            <div class="dropdown">
+	                                <div class="space"></div>
+	                                <div class="arrow"></div>
+	                                <ul class="dropdown-menu" role="menu">
+	                                    <li><a role="menuitem" tabindex="-1" href="downloads.html#">Softwares</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="downloads.html#">Whatever</a></li>
+	                                </ul>
+	                            </div>
+	                        </li>
+	                    </ul>
+	                </nav>
+	                <div class="pull-right header-contact">
+	                    <div>
+	                        <a class="btn btn-primary" href="aboutus.html#ContactInfo">Contact Us</a>
+	                    </div>
+	                </div>
+	                </div>
+	            </div>
+	        </div>
+	    </header>
+    </div>
+
+<div class="empty" style="height: 107px"></div>
+
+<div class="header-main bkg-green rel">
+    <div class="grid-100 cell-first cell-last top-30 bottom-10 squares">
+        <div class="gutter-bottom center-div-980">
+            <h1 class="font-40 font-white normal">Grants</h1>
+            <h4 class="font-16 normal font-white">intros (12 - 15 words)</h4>
+            <div class="gray-shadow gray-top">&nbsp;</div>
+            <div class="gray-shadow gray-bottom">&nbsp;</div>
+        </div>
+    </div>
+</div>
+
+<div class="container bs-docs-container">
+	<div class="row">
+		<div class="col-md-9" role="main">
+			<div id="Introduction" class="bs-docs-section">
+				<h1 class="page-header">
+			    INTRODUCTION	
+				</h1>
+                <p>CBIS activities are supported by the Department of Biostatistics and Bioinformatics at Emory University and external grants.  Listed below are several grants that have contributed to CBIS research efforts.</p> 
+                <p>Some grants achievements of CBIS members and collaborators can also be found in our 
+                    <em>
+                        <a href="files/CBIS_Evaluation.pdf" target="_blank">CBIS Five-Year Report.</a>
+                    </em>
+                </p>
+			</div>	
+			<div id="Fundings" class="bs-docs-section bottom-20">
+				<h1 class="page-header">
+			    FUNDINGS
+				</h1>
+                <div class="fundings bottom-20">
+                    <h4 class="font-20">
+                        Statistical ICA Methods for Analysis and Integration of Multi-dimensional Data
+                    </h4>
+                    <p>Funded by: National Institutes of Health (NIMH), R01<br> 
+                    Principal Investigator: Ying Guo, PhD. and Jian Kang, Ph.D.<br>
+                    Funding Period: 09/25/2014-07/31/2018</P>
+                    <p>This project seeks to develop novel statistical independent component analysis 
+                    (ICA) methods for integrating multi-dimensional data (multimodal imaging/genetics/
+                    behavior) to enhance understanding of mechanisms and treatment response of mental 
+                    disorders.</p>
+                </div>
+                <div class="fundings bottom-20">
+                    <h4 class="font-20">
+                        Method Development of Agreement Measures and Applications in Mental Health
+                    </h4>
+                    <p>Funded by: National Institutes of Health (NIMH), R01<br> 
+                    Principal Investigator: Ying Guo, PhD., Amita K. Manatunga, Ph.D., and Limin Peng<br>
+                    Funding Period: 09/01/2013-08/3/2018</P>
+                    <p>This proposal aims to develop new statistical methods to investigate the 
+                    alignment between traditional behavior/clinical outcomes and neuroimaging biomarkers 
+                    and also to assess agreement and calibrate images from multi-center neuroimaging 
+                    studies.</p>
+                </div>
+                <div class="fundings bottom-20">
+                    <h4 class="font-20">
+                        Analytic Methods for Determining Multimodal Biomarkers for Parkinson's Disease
+                    </h4>
+                    <p>Funded by: National Institutes of Health (NINDS), U18<br> 
+                    Principal Investigator:  F. DuBois Bowman, Ph. D.<br>
+                    Funding Period:  10/2012-9/2015</P>
+                    <p>This project is funded as a part of the NINDS Parkinson's Disease Biomarker 
+                    Program. There has been considerable progress in understanding the biology of 
+                    Parkinson's disease (PD). Reliable biomarkers are still lacking, however, for 
+                    early stage detection of PD and for characterizing disease progression. We are 
+                    pursuing two avenues that may reveal early-stage PD biomarkers. First, we are 
+                    combining datasets from different imaging modalities [including neuromelanin 
+                    magnetic resonance imaging (NM-MRI) of the locus coeruleus and the substantia 
+                    nigra, chemical shift imaging (CSI), diffusion tensor imaging (DTI), and 
+                    resting-state functional MRI], cerebrospinal fluid (CSF) analytes, genotype 
+                    information, and numerous clinical variables and developing new statistical 
+                    methods to identify multimodal PD biomarkers from these massive datasets. 
+                    Secondly, we will consider a Kaiser Permanente clinical database with nearly 
+                    250,000 subscribers in Georgia and attempt to determine prior diagnoses, lab 
+                    results, and medication histories that are risk factors for the subsequent 
+                    development of PD.</p>
+                </div>
+                <div class="fundings bottom-20">
+                    <h4 class="font-20">
+                        Neuroimaging Correlates of Impaired Fear Inhibition in PTSD 
+                    </h4>
+                    <p>Funded by: National Institutes of Health (NIMH), R21<br> 
+                    Principal Investigator:  Tanja Jovanovic, Ph. D.<br>
+                    Funding Period:  9/19/2012-5/31/2014</P>
+                    <p>This study will use structural and functional MRI analyses to examine 
+                    differences in PTSD related to impaired fear inhibition.</p>
+                </div>
+                <div class="fundings bottom-20">
+                    <h4 class="font-20">
+                        Anti-18F-FACBC PET-CT for the Detection and Staging of Recurrent Prostate Carcinoma 
+                    </h4>
+                    <p>Funded by: National Institutes of Health (NCI), R01<br> 
+                    Principle Investigator: David Schuster, M.D.<br>
+                    Funding Period: 2011-2012</P>
+                    <p>The general objective of this research is to determine if PET imaging with 
+                    anti-[18F]FACBC will lead to improved patient care in the diagnosis and staging 
+                    of prostate cancer and to elucidate the mechanism of its uptake within malignant 
+                    cells. The specific hypothesis behind this project is that anti-[18F]FACBC PET-CT 
+                    will detect more local and extraprostatic recurrence than standard conventional 
+                    imaging, especially compared with Indium-capromab-pendetide (ProstaScint).</p>
+                </div>
+                <div class="fundings bottom-20">
+                    <h4 class="font-20">
+                        Analysis of Ultra High-Dimensional Data in Imaging Genetics Studies
+                    </h4>
+                    <p>Funded by: Emory University Research Committee (URC) and the Atlanta Clinical and Translational Science Institute (ACTSI)<br> 
+                    Principle Investigator: Jian Kang, Ph.D.<br>
+                    Funding Period: 2011-2012</P>
+                    <p>The objective of this grant is to develop new statistical methods for the 
+                    analysis of Ultra High-Dimensional Data in Imaging Genetics Studies.</p>
+                </div>
+                <div class="fundings bottom-20">
+                    <h4 class="font-20">
+                        Biostatistics in Genetics, Immunology, and Neuroimaging (BGIN)
+                    </h4>
+                    <p>Funded by:  National Institutes of Health (NIGMS), T32<br> 
+                    Principal Investigator:  Lance Waller, Ph. D.<br>
+                    Funding Period:  7/4/2005-6/30/2013
+                    </P>
+                    <p>The purpose of this grant is to provide Ph.D. students in Biostatistics 
+                    the opportunity to learn to develop statistical and computational innovations 
+                    applied in one of three areas of concentration, namely genetics, immunology, 
+                    or neuroimaging. The Neuroimaging Track offers training in neuroscience and 
+                    neuroimaging as well as a range of developmental activities such as laboratory 
+                    rotations and participation in seminars.</p>
+                </div>
+                <div class="fundings bottom-20">
+                    <h4 class="font-20">
+                        Analytic Methods for Functional Neuroimaging Data
+                    </h4>
+                    <p>Funded by:  National Institutes of Health (NIMH), R01<br> 
+                    Principal Investigator:  F. DuBois Bowman, Ph. D.<br>
+                    Funding Period:  7/15/2007-6/30/2011
+                    </P>
+                    <p>The purpose of this grant is to develop novel statistical methods for 
+                    1) predicting patterns of distributed neural processing following a treatment 
+                    intervention, 2) determing the likelihood of response to treatment on an 
+                    individual basis, using neural processing information, and 3) developing an 
+                    improved spatio-temporal modeling framework for analyzing functional neuroimaging 
+                    data to identify prominent functional connections in brain activity and to 
+                    identify task-related increases (decreases) in brain activity.</p>
+                </div>
+                <div class="fundings bottom-20">
+                    <h4 class="font-20">
+                        Statistical methods for group independent component analysis for multi-subject functional magnetic resonance imaging data
+                    </h4>
+                    <p>Funded by: Emory University Research Committee<br> 
+                    Principle Investigator: Ying Guo, Ph.D.<br>
+                    Funding Period: 06/30/2009-06/30/2010
+                    </P>
+                    <p>The objective of this grant is to develop new statistical methods for 
+                    group independent component analysis (ICA) to estimate subject-specific 
+                    spatial source signals and to establish formal statistical testing framework 
+                    for between-group comparisons in spatial domain.</p>
+                </div>
+                <div class="fundings bottom-20">
+                    <h4 class="font-20">
+                        Statistical Methods for Neuroimaging Data
+                    </h4>
+                    <p>National Institutes of Health (NIMH), K25<br> 
+                    Principal Investigator:  F. DuBois Bowman, Ph. D.<br>
+                    Funding Period:  9/10/2002-8/31/2007
+                    </P>
+                    <p>This project focuses on the development of new statistical methodology to 
+                    analyze functional neuroimaging data, including both positron emission tomography 
+                    (PET) and functional magnetic resonance imaging (fMRI).  Specific goals focus 
+                    on 1) the development, application, and evaluation of clustering methods to 
+                    determine brain regions that exhibit similarities in task-related brain function, 
+                    2) the modeling of design-related correlations from repeated scanning sessions, 
+                    and 3) spatial modeling of correlations between localized brain activity 
+                    measurements.</p>
+                </div>
+                <div class="fundings bottom-20">
+                    <h4 class="font-20">
+                        Cocaine Dependence and Cognitive Control of Behavior
+                    </h4>
+                    <p>Funded by:  National Institutes of Health (NIDA), R01<br> 
+                    Principal Investigator:  Clinton Kilts, Ph. D.<br>
+                    Funding Period:  8/15/2003-4/30/2007</P>
+                    <p>The goal of this project is to isolate and compare the neural correlates 
+                    of response inhibition in cocaine dependence and Obsessive-Compulsive Disorder 
+                    to provide a functional neuroanatomical basis of comparison across disorders 
+                    of impulse control.</p>
+                </div>
+                <div class="fundings bottom-20">
+                    <h4 class="font-20">
+                        Detecting Changes in Myocardial Perfusion and Function
+                    </h4>
+                    <p>Funded by:  National Institutes of Health (NHLBI), R01<br> 
+                    Principal Investigator:  Tracy Faber, Ph. D.<br>
+                    Funding Period:  7/15/2002-6/30/2007</P>
+                    <p>The objective of this project is to develop and validate computer-based 
+                    methods to visualize serial changes in myocardial perfusion and function from 
+                    single photon emission computed tomography.  Furthermore, this study proposes 
+                    new statistical methodology to quantify and test the significance of perfusion 
+                    changes using models that account for temporal and spatial correlation among 
+                    the multiple perfusion measurements of the left ventricle.</p>
+                </div>
+                <div class="fundings bottom-20">
+                    <h4 class="font-20">
+                        Wavelet Image Interpolation (WII): A Wavelet-Based Approach to Enhancement of Digital Mammography Images
+                    </h4>
+                    <p>Funded by:  Georgia Cancer Coalition<br> 
+                    al Investigator:  F. DuBois Bowman, Ph. D. and Brani Vidakovic, Ph. D.<br>
+                    Funding Period:  3/1/2005-12/31/2006
+                    </P>
+                    <p>The main objective of this research is to improve diagnostic capabilities of 
+                    digital mammography images by developing a wavelet-based image enhancement 
+                    procedure.  The procedure refines the appearances of tiny, possibly malignant, 
+                    microcalcifications that appear sparsely throughout digital mammograms.</p>
+                </div>
+            </div>
+		</div>
+		<div class="col-md-3">
+		<nav id="myScrollspy">
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a href="#Introduction">Introduction</a></li>
+                    <li><a href="#Fundings">Fundings</a></li>
+                </ul>
+            </nav>	
+            </div>
+		</div>
+	</div>
+</div>
+
+<div class="footer_wrapper">
+	<div class="container">
+		<div class="footer">
+			<div class="footer_content">
+				<div class="col-sm-12">
+					<ul>
+						<li><a href="http://www.emory.edu" target="_blank">Emory University</a>|</li>
+						<li><a href="http://www.sph.emory.edu" target="_blank">The Rollins School of Public Health</a>|</li>
+						<li><a href="http://www.sph.emory.edu/bios/index.php" target="_blank">Department of Biostatistics</a>|</li>		
+						<li><a href="http://www.sph.emory.edu/bios/index.php" target="_blank">Terms & Conditions</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="col-sm-12 copyright text-center">
+				<p>Copyright © 2015 Center for Biomedical Imaging Statistics. All rights reserved.</p>
+				<h4>CBIS</h4>	
+			</div>
+		</div><!--footer-->	
+	</div>
+</div><!--footer_wrapper-->
+  <!--wrapper-->
+<script type="text/javascript">
+	$(document).ready(function() {/* var defaults = {containerID: 'toTop', // fading element id containerHoverID: 'toTopHover', // fading element hover id scrollSpeed: 1200, easingType: 'linear'}; */ 
+	$().UItoTop({ easingType: 'easeOutQuart' }); });
+	(function($){$.fn.UItoTop=function(options){var defaults={text:'To Top',min:200,inDelay:600,outDelay:400,containerID:'toTop',containerHoverID:'toTopHover',scrollSpeed:1000,easingType:'linear'},settings=$.extend(defaults,options),containerIDhash='#'+settings.containerID,containerHoverIDHash='#'+settings.containerHoverID;$('body').append('<a href="#" id="'+settings.containerID+'">'+settings.text+'</a>');$(containerIDhash).hide().on('click.UItoTop',function(){$('html, body').animate({scrollTop:0},settings.scrollSpeed,settings.easingType);$('#'+settings.containerHoverID,this).stop().animate({'opacity':0},settings.inDelay,settings.easingType);return false;}).prepend('<span id="'+settings.containerHoverID+'"></span>').hover(function(){$(containerHoverIDHash,this).stop().animate({'opacity':1},600,'linear');},function(){$(containerHoverIDHash,this).stop().animate({'opacity':0},700,'linear');});$(window).scroll(function(){var sd=$(window).scrollTop();if(typeof document.body.style.maxHeight==="undefined"){$(containerIDhash).css({'position':'absolute','top':sd+$(window).height()-50});}
+if(sd>settings.min)
+$(containerIDhash).fadeIn(settings.inDelay);else
+$(containerIDhash).fadeOut(settings.Outdelay);});};})(jQuery);
+</script>
+<a href="#" id="toTop" style="display: block;"> 
+<span id="toTopHover" style="opacity: 1;"></span></a>
+</body>
+</html>
