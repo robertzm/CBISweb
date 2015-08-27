@@ -121,10 +121,6 @@
     .top-80 {padding-top: 80px!important}
      
     .top-100 {padding-top: 100px!important}
-
-    .top-fixed-50 {top: 50px!important}
-
-    .top-fixed-60 {top: 60px!important}
      
     .bottom-5 {padding-bottom: 5px!important}
      
@@ -348,8 +344,6 @@
     .bg-pos-center {background-position: center top!important;background-repeat:no-repeat!important}
      
     .font-family-arial {font-family: Arial,Helvetica,Verdana,sans-serif}
-
-    .font-family-georgia {font-fmaily: Georgia, "Times New Roman", Times, serif}
      
     .font-family-proxima,.font-family-salesforce {font-family: SalesforceSansRegular,Arial,sans-serif}
      
@@ -695,7 +689,7 @@
      
     .text-right {text-align: right}
 
-    .bkg-blue {background-color:#1692c1}
+    .bkg-blue {background-color:#002878}
      
     .bkg-teal {background-color:#1bb7a6}
      
@@ -839,7 +833,7 @@ body.bs-docs a{
 }
  
 body.bs-docs a:focus,body.bs-docs a:hover {
-	color: #b0007f;
+	color: #f4ed7c;
 	text-decoration:none;
 }
  
@@ -908,7 +902,7 @@ body.bs-docs .btn-primary:active,body.bs-docs .btn-primary:focus,body.bs-docs .b
 }
 
 body.bs-docs #dato-logo{
-	background-image: url("../images/logo.png");
+	background-image: url("../images/CBIS.png");
     background-size: 100% 100%;
     padding: 0px;
 	height: 75px;
@@ -941,7 +935,7 @@ body.bs-docs header nav>ul>li {
 }
  
 body.bs-docs header nav>ul>li>a {
-	color: #555;
+	color: #ffffff;
 	font-size: 14px;
 	text-transform: uppercase;
 	letter-spacing: .05em
@@ -1013,6 +1007,12 @@ body.bs-docs .navbar-default .navbar-nav>li>a.btn:active,body.bs-docs .navbar-de
 	position: fixed;
 }
 
+.top-60 {
+	top: 60px;
+}
+
+
+
 /* ------------ bs docs ------------- */
 .bs-docs-featurette {
 	padding-top: 70px;
@@ -1053,10 +1053,13 @@ body.bs-docs .navbar-default .navbar-nav>li>a.btn:active,body.bs-docs .navbar-de
 
 .footer {
 	display: block;
+	min-height: 200px;
 	color: white;
 }
 
 .footer .footer_content {
+	padding-top: 40px;
+	margin-bottom: 40px;
 	display: block;
 	text-align: center;
 	color: #3B4A5A;
@@ -1088,6 +1091,7 @@ body.bs-docs .navbar-default .navbar-nav>li>a.btn:active,body.bs-docs .navbar-de
 
 .footer .copyright {
 	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	padding-top: 40px;
 	display: block;
 	color: rgba(255, 255, 255, 0.3);
 }

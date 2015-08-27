@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Center for Biomedical Imaging Statistics (CBIS)</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<link href="css/global.css" rel="stylesheet">
+	<link href="css/people.css" rel="stylesheet">
+	<script>
+            $(window).scroll(function(){
+                var ref_min = $("#myScrollspy")[0];
+                if(!ref_min)
+                    return;
+                if($(window).scrollTop() > $("#Introduction").offset().top -120 ){
+                    $("#myScrollspy").addClass("isfixed");
+                    $("#myScrollspy").addClass("top-60");
+                }else{
+                    $("#myScrollspy").removeClass("isfixed");
+                    $("#myScrollspy").removeClass("top-60");
+                }
+            });
+            $(window).on("hashchange", function () {
+                    window.scrollTo(window.scrollX, window.scrollY - 100);
+            });
+    </script>
+</head>
+
+<body class="bs-docs" data-spy="scroll" data-target="#myScrollspy" data-offset="500">
+    <!-- top navigation (dont change it by yourself) -->
+	<div class="bkg-white z-index-5 isfixed width-100">
+	    <header style="height: 102px; margin-bottom: 5px;">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-xs-12 hidden-xs">
+	                <a rel="home" href="index.html" style="display: inline-block; vertical-align: top; margin-top: 15px;">
+	                    <div id="dato-logo"></div>
+	                </a>
+	                <nav style="display: inline-block; margin-top: 56px">
+	                    <ul class="list-inline">
+	                        <li><a href="index.html">Home</a></li>
+	                        <li><a href="aboutus.html">Aboutus</a></li>
+	                        <li><a href="people.html">People</a>
+	                            <div class="dropdown">
+	                                <div class="space"></div>
+	                                <div class="arrow"></div>
+	                                <ul class="dropdown-menu" role="menu">
+	                                    <li><a role="menuitem" tabindex="-1" href="people.html#Core-Faculty">Core Faculty</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="people.html#Affiliated-Faculty">Affiliated Faculty</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="people.html#Members">Members</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="people.html#Alumni">Alumni</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="people.html#Collaborators">Collaborators</a></li>
+	                                </ul>
+	                            </div>
+	                        </li>
+	                        <li><a href="research.html">Research</a>
+	                            <div class="dropdown">
+	                                <div class="space"></div>
+	                                <div class="arrow"></div>
+	                                <ul class="dropdown-menu" role="menu">
+	                                    <li><a role="menuitem" tabindex="-1" href="#">Research 1</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="research.html#">Research 2</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="research.html#">Research 3</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="research.html#">Research 4</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="research.html#">Research 5</a></li>
+	                                </ul>
+	                            </div>
+	                        </li>
+	                        <li><a href="methodology.html">Publications</a>
+	                            <div class="dropdown">
+	                                <div class="space"></div>
+	                                <div class="arrow"></div>
+	                                <ul class="dropdown-menu" role="menu">
+	                                    <li><a role="menuitem" tabindex="-1" href="methodology.html#">Methodology</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="applications.html#">Applications</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="presentations.html#">Presentations</a></li>
+	                                </ul>
+	                            </div>
+	                        </li>
+	                        <li><a href="grants.html">Grants</a></li>
+	                        <li><a href="resources.html">Resources</a>
+	                            <div class="dropdown">
+	                                <div class="space"></div>
+	                                <div class="arrow"></div>
+	                                <ul class="dropdown-menu" role="menu">
+	                                    <li><a role="menuitem" tabindex="-1" href="softwares.html#">Softwares</a></li>
+	                                    <li role="presentation" class="divider"></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="Links.html#">Links</a></li>
+	                                </ul>
+	                            </div>
+	                        </li>
+	                    </ul>
+	                </nav>
+	                <div class="pull-right header-contact">
+	                    <div>
+	                        <a class="btn btn-primary" href="aboutus.html#ContactInfo">Contact Us</a>
+	                    </div>
+	                </div>
+	                </div>
+	            </div>
+	        </div>
+	    </header>
+    </div>
+
+    <!-- empty band --> 
+    <div class="empty" style="height: 107px"></div>
+
+    <!-- page header -->
+    <!-- step 1 begins: -->
+    <div class="header-main bkg-green rel">
+        <div class="grid-100 cell-first cell-last top-30 bottom-10 squares">
+            <div class="gutter-bottom center-div-980">
+                <!-- example for changing research title
+                <h1 class="font-40 font-white normal">Statistical Approaches for Exploring Brain Connectivity with 
+                    Multi-Modal Neuroimaging Data</h1>
+                -->
+                <h1 class="font-40 font-white normal">Fill In Your Research Title here!!!</h1>
+                <!-- example for changing authors and working department 
+                <h2 class="font-20 normal font-white">Phebe B. Kemmer<sup>1</sup>, Ying Guo<sup>1</sup>, F. DuBois Bowman<sup>2</sup></h2>
+                <h4 class="font-16 normal font-white"> <sup>1</sup>Department of Biostatistics and Bioinformatics, Emory University; <sup>2</sup>Department of Biostatistics, Columbia University
+                If you need superscript for indicating working department, please use <sup>number</sup> after author's name.
+                -->
+                <h2 class="font-20 normal font-white">Author Name 1<sup>1</sup>, Author Name 2<sup>2</sup>, ...</h2>
+                <h4 class="font-16 normal font-white"> <sup>1</sup>Working Department name 1; <sup>2</sup>Working Department Name 2;</h4>
+
+                <!-- no change needed here -->
+                <div class="gray-shadow gray-top">&nbsp;</div>
+                <div class="gray-shadow gray-bottom">&nbsp;</div>
+            </div>
+        </div>
+    </div>
+    <!-- step 1 over -->
+
+    <!-- main content and side navigation -->
+    <div class="container bs-docs-container">
+        <div class="row">
+            <!-- step 2 begins: -->
+            <!-- change main content -->
+            <div class="col-md-9" role="main">
+                <!-- fill in first section content -->
+                <!-- please dont change first section id and name, leave it as 'introduction' -->
+                <div id="Introduction" class="bs-docs-section">
+                    <h1 class="page-header">
+                    INTRODUCTION	
+                    </h1>
+                    <p>words and pictures</p><!-- delete this line when you add words and pictures -->
+                    <!-- add content you need based on the guide -->
+                </div>	
+                <!-- first section content fill-in end -->
+
+                <!-- fill in second section content -->
+                <!-- change section 2 id as you need, like 'Methods' -->
+                <div id="Section2id" class="bs-docs-section">
+                    <h1 class="page-header">
+                        <!-- change section 2 name as you need, like 'METHODS' -->
+                        SECTION 2 NAME  
+                    </h1>
+                    <p>words and pictures</p><!-- delete this line when you add words and pictures -->
+                    <!-- add content you need based on the guide -->
+                </div>
+                <!-- second section content fill-in end -->
+
+                <!-- fill in the rest sections content if necessary as the second section template -->
+            </div>
+            <!-- step 2 over -->
+
+            <!-- change side navigations bar -->
+            <!-- step 3 begins -->
+            <div class="col-md-3">
+                <nav id="myScrollspy">
+                    <ul class="nav nav-pills nav-stacked">
+                        <!-- please dont chage the first one -->
+                        <li class="active"><a href="#Introduction">Introduction</a></li>
+                        <!-- change the rest based on the rest sections' name and id -->
+                        <li><a href="#Section2id">Section 2 Name</a></li>
+                        <li><a href="#Section3id">Section 3 Name</a></li>
+                        <!-- add item if necessary -->
+                    </ul>
+                </nav>	
+                </div>
+            </div>
+            <!-- step 3 over -->
+            <!-- all finished -->
+        </div>
+    </div>
+
+    <div class="footer_wrapper">
+        <div class="container">
+            <div class="footer">
+                <div class="footer_content">
+                    <div class="col-sm-12">
+                        <ul>
+                            <li><a href="http://www.emory.edu" target="_blank">Emory University</a>|</li>
+                            <li><a href="http://www.sph.emory.edu" target="_blank">The Rollins School of Public Health</a>|</li>
+                            <li><a href="http://www.sph.emory.edu/bios/index.php" target="_blank">Department of Biostatistics</a>|</li>		
+                            <li><a href="http://www.sph.emory.edu/bios/index.php" target="_blank">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="col-sm-12 copyright text-center">
+                    <p>Copyright © 2015 Center for Biomedical Imaging Statistics. All rights reserved.</p>
+                    <h4>CBIS</h4>	
+                </div>
+            </div><!--footer-->	
+        </div>
+    </div><!--footer_wrapper-->
+  <!--wrapper-->
+    <script type="text/javascript">
+        $(document).ready(function() {/* var defaults = {containerID: 'toTop', // fading element id containerHoverID: 'toTopHover', // fading element hover id scrollSpeed: 1200, easingType: 'linear'}; */ 
+        $().UItoTop({ easingType: 'easeOutQuart' }); });
+        (function($){$.fn.UItoTop=function(options){var defaults={text:'To Top',min:200,inDelay:600,outDelay:400,containerID:'toTop',containerHoverID:'toTopHover',scrollSpeed:1000,easingType:'linear'},settings=$.extend(defaults,options),containerIDhash='#'+settings.containerID,containerHoverIDHash='#'+settings.containerHoverID;$('body').append('<a href="#" id="'+settings.containerID+'">'+settings.text+'</a>');$(containerIDhash).hide().on('click.UItoTop',function(){$('html, body').animate({scrollTop:0},settings.scrollSpeed,settings.easingType);$('#'+settings.containerHoverID,this).stop().animate({'opacity':0},settings.inDelay,settings.easingType);return false;}).prepend('<span id="'+settings.containerHoverID+'"></span>').hover(function(){$(containerHoverIDHash,this).stop().animate({'opacity':1},600,'linear');},function(){$(containerHoverIDHash,this).stop().animate({'opacity':0},700,'linear');});$(window).scroll(function(){var sd=$(window).scrollTop();if(typeof document.body.style.maxHeight==="undefined"){$(containerIDhash).css({'position':'absolute','top':sd+$(window).height()-50});}
+    if(sd>settings.min)
+    $(containerIDhash).fadeIn(settings.inDelay);else
+    $(containerIDhash).fadeOut(settings.Outdelay);});};})(jQuery);
+    </script>
+    <a href="#" id="toTop" style="display: block;"> 
+    <span id="toTopHover" style="opacity: 1;"></span></a>
+</body>
+</html>

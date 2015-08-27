@@ -1,0 +1,95 @@
+<!--
+Design by Bryant Smith
+http://www.bryantsmith.com
+http://www.aszx.net
+email: template [-at-] bryantsmith [-dot-] com
+Released under Creative Commons Attribution 2.5 Generic.  In other words, do with it what you please; but please leave the link if you'd be so kind :)
+
+Name       : An Ocean of Sky
+Description: One column, with top naviation.  All divs, validations: XHTML Strict 1.0 & CSS
+Version    : 1.0
+Released   : 20081009
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="yijuan.css">
+    <title>Yi-juan Hu</title>
+  </head>
+  <body>
+    <div id="mainPicture">
+      <div class="picture">
+        <div id="headerTitle">Yi-Juan Hu</div>
+      </div>
+      <div id="page">
+        <div class="topNaviagationLink"><a href="index.html">Home</a></div>
+        <div class="topNaviagationLink"><a href="publications.html">Publications</a></div>
+        <div class="topNaviagationLink"><a href="courses.html">Courses</a></div>
+        <div class="topNaviagationLink"><a href="software.html">Software</a></div>
+        <div class="topNaviagationLink"><a href="links.html">Links</a></div>
+      </div>
+    </div>
+    <div class="contentBox">
+      <div class="innerBoxPlus">
+        <div class="contentTitle">2013</div>
+        <div class="contentText">
+          <ul>
+            <li><b>Guo, Y</b> and Tang, Li. (2013). A hierarchical probabilistic model for group independent component analysis in fMRI studies, <i><b>Biometrics</b></i>,
+              doi: 10.1111/biom.12068. </li>              
+            <li><b>Guo, Y</b> Li R, Peng L and Manatunga AK. (2013). A new agreement measures based on survival processes, <i><b>Biometrics</b></i>,
+              doi: 10.1111/biom.12063. </li>
+             <li> Corwin, E.J., <b> Guo, Y</b>, Pajer, K., Lowe, N., McCarthy, D., Schmiege, S., Weber, M., Pace, T., & Stafford, B. (2013). Immune Dysregulation and Glucocorticoid Resistance in Minority and Low Income Pregnant Women. Psychoneuroendocrinology, <i><b>Psychoneuroendocrinology</b></i>,
+              38(9):1786-96. </li>  
+            <li> Waldrop-Valverde D., <b> Guo Y. </b>, Ownby R.L., Rodriguez A. and Jones D.L. Risk and Protective Factors for Retention in HIV Care. (2013). <i><b>AIDS and Behavior</b></i> . DOI 10.1007/s10461-013-0633-7. </li>
+          </ul>
+          <br>
+        </div>
+        <div class="contentTitle">2012</div>
+        <div class="contentText">
+          <ul>
+            <li>Sun, W., <b>Hu, Y. J.</b> (2012). eQTL mapping using
+              RNA-seq data, <i><b>Statistics in Biosciences</b></i>,
+              doi:10.1007/s12561-012-9068-3. </li>
+          </ul>
+          <br>
+        </div>
+        <div class="contentTitle">2010</div>
+        <div class="contentText">
+          <ul>
+            <li> <b>Hu, Y. J.</b>, Lin, D. Y., Zeng, D. (2010). A
+              General Framework for Studying Genetic Effects and
+              Gene-Environment Interactions with Missing Data, <i><b>Biostatistics</b></i>,
+              11: 583--598. </li>
+            <li> <b>Hu, Y. J.</b>, Lin, D. Y. (2010). Analysis of
+              Untyped SNPs: Maximum Likelihood and Imputation Methods, <i><b>Genetic
+
+
+
+
+
+
+
+
+                  Epidemiology</b></i>, 34: 803--815. </li>
+          </ul>
+          <br>
+        </div>
+        <div class="contentTitle">2008</div>
+        <div class="contentText">
+          <ul>
+            <li> Lin, D. Y., <b>Hu, Y. J.</b>, Huang, B. E. (2008).
+              Simple and Efficient Analysis of Disease Association with
+              Missing Genotype Data, <i><b>American Journal of Human
+                  Genetics</b></i>, 82: 444--452.<br>
+            </li>
+            <li> Lin, D. Y., <b>Hu, Y. J.</b> (2008). Reply to Marchini
+              and Howie, <i><b>American Journal of Human Genetics</b></i>,
+              83: 539--540. </li>
+          </ul>
+          <br>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

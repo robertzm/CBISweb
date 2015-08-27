@@ -16,10 +16,10 @@
                     return;
                 if($(window).scrollTop() > $("#Core-Faculty").offset().top -120 ){
                     $("#myScrollspy").addClass("isfixed");
-                    $("#myScrollspy").addClass("top-60");
+                    $("#myScrollspy").addClass("top-fixed-60");
                 }else{
                     $("#myScrollspy").removeClass("isfixed");
-                    $("#myScrollspy").removeClass("top-60");
+                    $("#myScrollspy").removeClass("top-fixed-60");
                 }
             });
             $(window).on("hashchange", function () {
@@ -89,14 +89,14 @@
 	                            </div>
 	                        </li>
 	                        <li><a href="grants.html">Grants</a></li>
-	                        <li><a href="downloads.html">Downloads</a>
+	                        <li><a href="resources.html">Resources</a>
 	                            <div class="dropdown">
 	                                <div class="space"></div>
 	                                <div class="arrow"></div>
 	                                <ul class="dropdown-menu" role="menu">
-	                                    <li><a role="menuitem" tabindex="-1" href="downloads.html#">Softwares</a></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="softwares.html#">Softwares</a></li>
 	                                    <li role="presentation" class="divider"></li>
-	                                    <li><a role="menuitem" tabindex="-1" href="downloads.html#">Whatever</a></li>
+	                                    <li><a role="menuitem" tabindex="-1" href="links.html#">Links</a></li>
 	                                </ul>
 	                            </div>
 	                        </li>
@@ -141,7 +141,7 @@
 									<img src="images/people/YingGuo.png" />
 								</td>
 								<td char="col-md-9">
-									<h4>Ying Guo</h4>
+                                    <h4 class="font-20"><a href="tmp.html">Ying Guo</a></h4>
 									<h5>Associate Professor</h5>
 									<ul>
 										<li><p>Research Interests: Imaging Statistics, Independent Component Analysis, Agreement and Reliability Methods <p></li>
@@ -156,7 +156,7 @@
 									<img src="images/people/Kundu.png" />
 								</td>
 								<td char="col-md-9">
-									<h4>Suprateek Kundu</h4>
+                                    <h4 class="font-20"><a href="">Suprateek Kundu</a></h4>
 									<h5>Assistant Professor</h5>
 									<ul>
 										<li><p>Research Interests: ...</p></li>
