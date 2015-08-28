@@ -16,10 +16,10 @@
                     return;
                 if($(window).scrollTop() > $("#Introduction").offset().top -120 ){
                     $("#myScrollspy").addClass("isfixed");
-                    $("#myScrollspy").addClass("top-60");
+                    $("#myScrollspy").addClass("top-fixed-60");
                 }else{
                     $("#myScrollspy").removeClass("isfixed");
-                    $("#myScrollspy").removeClass("top-60");
+                    $("#myScrollspy").removeClass("top-fixed-60");
                 }
             });
             $(window).on("hashchange", function () {
