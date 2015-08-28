@@ -1046,6 +1046,49 @@ body.bs-docs .navbar-default .navbar-nav>li>a.btn:active,body.bs-docs .navbar-de
 	width: 50%;
 }
 
+.news-section .left-news {
+    height: 531px;
+    background: url("../images/phebekemmer.jpg") no-repeat center center; 
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.news-section .left-news h1{
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 30px;
+    color: white;
+    text-align: right;
+}
+
+.news-section .left-news p{
+    margin-right: 10px;
+    font-size: 16px;
+    color: white;
+    text-align: right;
+}
+
+.news-section a{
+    color: red;
+    text-decoration:none;
+}
+ 
+.news-section a:focus, .news-section a:hover {
+    color: yellow;
+    text-decoration:none;
+}
+
+.header-main {
+    background: url("../images/bg_banner_slider.jpg") no-repeat center center; 
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100%;
+    padding: 0px;
+}
+
 /* ------------- footer wrapper ------------- */
 .footer_wrapper {
     background: #2e3e4d;
